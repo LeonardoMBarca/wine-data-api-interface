@@ -1,0 +1,3 @@
+(Arquivo feito para explicar o propósito SUGERIDO de cada página. Lembrando que obviamente mudanças na estrutura não são um problema, desde que seja alinhado com toda o grupo para não criar conflitos dentro do código.)
+
+Código de dashboards (caso haja o interesse em fazer alguma visualização dos dados, como um Streamlit)
