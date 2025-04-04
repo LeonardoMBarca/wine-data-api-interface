@@ -1,0 +1,8 @@
+python-dotenv
+requests
+pytest
+beautifulsoup4
+selenium
+numpy
+pandas
+scikit-learn
