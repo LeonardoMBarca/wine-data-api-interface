@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from scripts.utils import standardize_dataframe, accent_remove
 
-LOG_FILE = os.path.abspath(os.path.join("..", "..", "logs", "etl_silver.log"))
+LOG_FILE = os.path.abspath(os.path.join("..", "..", "logs", "etl_prod_silver.log"))
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,
@@ -50,7 +50,16 @@ def process_csv(path):
         "de_": "derivados_",
         '\"': "",
         "-": "_",
-        " ": "_"
+        " ": "_",
+        'à':'a',
+        'á':'a',
+        'ç':'c',
+        'é':'e',
+        'í':'i',
+        'ó':'o',
+        'ú':'u',
+        'ã':'a',
+        'õ':'o'
     }
 
     df = standardize_dataframe(df, standardize_dict)

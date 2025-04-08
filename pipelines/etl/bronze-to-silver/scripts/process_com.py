@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from scripts.utils import standardize_dataframe, accent_remove
 
-LOG_FILE = os.path.abspath(os.path.join("..", "..", "logs", "etl_silver.log"))
+LOG_FILE = os.path.abspath(os.path.join("..", "..", "logs", "etl_com_silver.log"))
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,
