@@ -3,12 +3,15 @@ import logging
 import pandas as pd
 from scripts.utils import standardize_dataframe, accent_remove
 
-LOG_FILE = os.path.abspath(os.path.join("..", "..", "logs", "etl_prod_silver.log"))
+LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "bronze-to-silver", "logs", "etl_prod_silver.log"))
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,
+    encoding='utf-8',
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filemode='w',
+    force=True
 )
 
 def process_csv(path):
@@ -63,16 +66,17 @@ def process_csv(path):
     }
 
     df = standardize_dataframe(df, standardize_dict)
-    df = df.drop(columns=["id", "produto"], errors="ignore")
+    df.drop(columns=["id", "produto"], errors="ignore", inplace=True)
 
     if 'control' not in df.columns:
         logging.error("Column 'control' not found in DataFrame after standardization.")
         raise ValueError("Column 'control' not found in DF after the standardization")
 
     try:
-        melted_df = df.melt(id_vars='control', var_name='ano', value_name='quantidade_litros')
+        melted_df = df.melt(id_vars='control', var_name='ano', value_name='Litros')
         melted_df['control'] = melted_df['control'].apply(accent_remove)
         logging.info("DataFrame transformation successful.")
+        
     except Exception as e:
         logging.error(f"Error during DataFrame transformation: {e}")
         raise ValueError(f"Error during DataFrame transformation: {e}")
@@ -85,8 +89,8 @@ def main():
     Loads the input file, processes it, and saves the transformed data
     into the silver layer.
     """
-    csv_path =  fr"..\..\{os.path.join("data", "bronze-layer", "Producao.csv")}"
-    silver_path = "../../data/silver-layer"
+    csv_path =  fr"{os.path.join("data", "bronze-layer", "Producao.csv")}"
+    silver_path = "data/silver-layer"
     output_file = os.path.join(silver_path, f"producao.csv")
     
     try:

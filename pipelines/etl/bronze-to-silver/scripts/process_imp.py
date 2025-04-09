@@ -3,7 +3,7 @@ import os
 import logging
 import pandas as pd
 
-LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "bronze-to-silver", "logs", "etl_exp_silver.log"))
+LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "bronze-to-silver", "logs", "etl_imp_silver.log"))
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,
@@ -50,7 +50,6 @@ def process_csv(path, sep):
 
     df = standardize_dataframe(df, standardize_dict)
     df.drop(columns=["id"], errors='ignore', inplace=True)
-
 
     logging.info(f"The dataframe head: {df.head()}")
 
@@ -102,17 +101,20 @@ def main():
     Loads the input file, processes it, and saves the transformed data
     into the silver layer.
     """
-    csv_path =  [fr"{os.path.join("data", "bronze-layer", f"Exp{i}.csv")}" for i in ["Uva", "Suco", "Vinho", "Espumantes"]]
+    csv_path =  [fr"{os.path.join("data", "bronze-layer", f"Imp{i}.csv")}" for i in ["Frescas", "Passas", "Suco", "Vinhos", "Espumantes"]]
     silver_path = "data/silver-layer"
 
-    output_file = [fr"{os.path.join(silver_path, f"Exp{i}.csv")}" for i in ["Uva", "Suco", "Vinho", "Espumantes"]]
+    output_file = [fr"{os.path.join(silver_path, f"Imp{i}.csv")}" for i in ["Frescas", "Passas", "Suco", "Vinhos", "Espumantes"]]
 
     try:
         for i, e in enumerate(csv_path):
-            df_processed = process_csv(e, sep='\t')
+            if output_file[i] == fr"{os.path.join(silver_path, f"ImpSuco.csv")}":
+                df_processed = process_csv(e, sep=';')
+            else:
+                df_processed = process_csv(e, sep='\t')
 
             if os.path.exists(output_file[i]):
-                os.remove(output_file[i])
+                os.remove(output_file[i]) 
                 logging.info(f"Existing output file removed: {output_file[i]}")
                 print(f"{output_file[i]} was removed.")
 
