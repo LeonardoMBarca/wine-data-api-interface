@@ -6,18 +6,22 @@ def split_column_value(df, column_name):
     
     for original_value in df[column_name].unique():
         # 1. Limpeza
-        clean_value = original_value.lower()
-        clean_value = clean_value.replace("(", "").replace(")", "").strip("_")
-        clean_value = clean_value.replace("_", " ")
-        clean_value = re.sub(r'\b(de|da|do|com)\b', '_', clean_value)
-        clean_value = re.sub(r'\s+', ' ', clean_value).strip()
-        clean_value = clean_value.replace(" ", "_")
-        clean_value = re.sub(r'_+', '_', clean_value).strip("_")
+        if original_value is None or original_value == "" or original_value == "nan":
+            continue
 
-        # 2. Tokenização
-        tokens = clean_value.split("_")
+        else:
+            clean_value = original_value.lower()
+            clean_value = clean_value.replace("(", "").replace(")", "").strip("_")
+            clean_value = clean_value.replace("_", " ")
+            clean_value = re.sub(r'\b(de|da|do|com)\b', '_', clean_value)
+            clean_value = re.sub(r'\s+', ' ', clean_value).strip()
+            clean_value = clean_value.replace(" ", "_")
+            clean_value = re.sub(r'_+', '_', clean_value).strip("_")
 
-        # 3. Armazenar [original, [tokens]]
-        list_column_value.append([original_value, tokens])
+            # 2. Tokenização
+            tokens = clean_value.split("_")
+
+            # 3. Armazenar [original, [tokens]]
+            list_column_value.append([original_value, tokens])
     
     return list_column_value
