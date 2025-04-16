@@ -2,19 +2,7 @@ import os
 import logging
 import pandas as pd
 import re
-from scripts.utils import split_column_value  # This function returns a list: [original_value, [tokens]]
-
-# Setup logging
-LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "silver-to-gold", "logs", "etl_prod_gold.log"))
-os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-logging.basicConfig(
-    filename=LOG_FILE,
-    encoding='utf-8',
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filemode='w',
-    force=True
-)
+from scripts.utils import split_column_value
 
 def dimensional_modeling_csv(path):
     """
@@ -166,6 +154,7 @@ def main():
     enriched attributes, and saves the transformed data into the gold layer.
     """
     try:
+        logging.info("Teste")
         csv_path = os.path.join("data", "silver-layer", "producao.csv")
         gold_path = "data/gold-layer"
         output_file = os.path.join(gold_path, "producao.csv")
@@ -181,6 +170,5 @@ def main():
         logging.error("Critical error in main: %s", e)
         raise
 
-if __name__ == '__main__':
-    processed_df = main()
-    print(processed_df.head())
+if __name__ == "__main__":
+    main()

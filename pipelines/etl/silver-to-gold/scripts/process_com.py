@@ -4,18 +4,6 @@ import pandas as pd
 import re
 from scripts.utils import split_column_value  # This function returns a list: [original_value, [tokens]]
 
-# Setup logging
-LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "silver-to-gold", "logs", "etl_com_gold.log"))
-os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-logging.basicConfig(
-    filename=LOG_FILE,
-    encoding='utf-8',
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filemode='w',
-    force=True
-)
-
 def dimensional_modeling_csv(path):
     """
     Reads the CSV file from the silver layer, processes it by extracting tokens from the "control" column,

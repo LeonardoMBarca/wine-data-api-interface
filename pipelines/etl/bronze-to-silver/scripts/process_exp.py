@@ -3,17 +3,6 @@ import os
 import logging
 import pandas as pd
 
-LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "bronze-to-silver", "logs", "etl_exp_silver.log"))
-os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-logging.basicConfig(
-    filename=LOG_FILE,
-    encoding='utf-8',
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filemode='w',
-    force=True
-)
-
 def process_csv(path, sep):
     """
 

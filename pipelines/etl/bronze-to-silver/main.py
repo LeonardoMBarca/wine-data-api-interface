@@ -1,3 +1,18 @@
+import os
+import logging
+
+# Setup logging
+LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "bronze-to-silver", "logs", "etl_silver.log"))
+os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
+logging.basicConfig(
+    filename=LOG_FILE,
+    encoding='utf-8',
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filemode='w',
+    force=True
+)
+
 from scripts.process_prod import main as process_prod
 from scripts.process_com import main as process_com
 from scripts.process_exp import main as process_exp
