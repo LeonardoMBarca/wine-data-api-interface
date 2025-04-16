@@ -154,7 +154,7 @@ def main():
     enriched attributes, and saves the transformed data into the gold layer.
     """
     try:
-        logging.info("Teste")
+        logging.info("Starting process_prod.py")
         csv_path = os.path.join("data", "silver-layer", "producao.csv")
         gold_path = "data/gold-layer"
         output_file = os.path.join(gold_path, "producao.csv")
@@ -165,10 +165,11 @@ def main():
         os.makedirs(gold_path, exist_ok=True)
         df.to_csv(output_file, index=False)
         logging.info("Process completed successfully. Output saved to: %s", output_file)
-        return df
+        print(f"New processed data is in: {output_file}")
+
     except Exception as e:
         logging.error("Critical error in main: %s", e)
-        raise
+        print(f"ETL process failed: {e}")
 
 if __name__ == "__main__":
     main()

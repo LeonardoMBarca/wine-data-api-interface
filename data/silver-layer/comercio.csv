@@ -25,7 +25,7 @@ suco_organico,1970,0
 outros_sucos,1970,0
 suco_de_uvas_concentrado,1970,0
 nan,1970,19844550
-outros_outros_vinhos_(sem_informdetalhada,1970,0
+outros_outros_vinhos_sem_informdetalhada,1970,0
 outros_agrin,1970,0
 outros_aguardente,1970,0
 outros_alcool_vinico,1970,0
@@ -87,7 +87,7 @@ suco_organico,1971,0
 outros_sucos,1971,0
 suco_de_uvas_concentrado,1971,0
 nan,1971,20351384
-outros_outros_vinhos_(sem_informdetalhada,1971,0
+outros_outros_vinhos_sem_informdetalhada,1971,0
 outros_agrin,1971,0
 outros_aguardente,1971,0
 outros_alcool_vinico,1971,0
@@ -149,7 +149,7 @@ suco_organico,1972,0
 outros_sucos,1972,0
 suco_de_uvas_concentrado,1972,59044
 nan,1972,23615205
-outros_outros_vinhos_(sem_informdetalhada,1972,0
+outros_outros_vinhos_sem_informdetalhada,1972,0
 outros_agrin,1972,0
 outros_aguardente,1972,0
 outros_alcool_vinico,1972,0
@@ -211,7 +211,7 @@ suco_organico,1973,0
 outros_sucos,1973,0
 suco_de_uvas_concentrado,1973,1951966
 nan,1973,25401454
-outros_outros_vinhos_(sem_informdetalhada,1973,0
+outros_outros_vinhos_sem_informdetalhada,1973,0
 outros_agrin,1973,0
 outros_aguardente,1973,0
 outros_alcool_vinico,1973,0
@@ -273,7 +273,7 @@ suco_organico,1974,0
 outros_sucos,1974,0
 suco_de_uvas_concentrado,1974,1619428
 nan,1974,24530878
-outros_outros_vinhos_(sem_informdetalhada,1974,0
+outros_outros_vinhos_sem_informdetalhada,1974,0
 outros_agrin,1974,0
 outros_aguardente,1974,0
 outros_alcool_vinico,1974,0
@@ -335,7 +335,7 @@ suco_organico,1975,0
 outros_sucos,1975,0
 suco_de_uvas_concentrado,1975,768401
 nan,1975,23102540
-outros_outros_vinhos_(sem_informdetalhada,1975,0
+outros_outros_vinhos_sem_informdetalhada,1975,0
 outros_agrin,1975,0
 outros_aguardente,1975,0
 outros_alcool_vinico,1975,0
@@ -397,7 +397,7 @@ suco_organico,1976,0
 outros_sucos,1976,0
 suco_de_uvas_concentrado,1976,1467883
 nan,1976,28321777
-outros_outros_vinhos_(sem_informdetalhada,1976,0
+outros_outros_vinhos_sem_informdetalhada,1976,0
 outros_agrin,1976,0
 outros_aguardente,1976,0
 outros_alcool_vinico,1976,0
@@ -459,7 +459,7 @@ suco_organico,1977,0
 outros_sucos,1977,0
 suco_de_uvas_concentrado,1977,2444089
 nan,1977,27333925
-outros_outros_vinhos_(sem_informdetalhada,1977,0
+outros_outros_vinhos_sem_informdetalhada,1977,0
 outros_agrin,1977,0
 outros_aguardente,1977,0
 outros_alcool_vinico,1977,0
@@ -521,7 +521,7 @@ suco_organico,1978,0
 outros_sucos,1978,0
 suco_de_uvas_concentrado,1978,2454178
 nan,1978,29509570
-outros_outros_vinhos_(sem_informdetalhada,1978,0
+outros_outros_vinhos_sem_informdetalhada,1978,0
 outros_agrin,1978,0
 outros_aguardente,1978,0
 outros_alcool_vinico,1978,0
@@ -583,7 +583,7 @@ suco_organico,1979,0
 outros_sucos,1979,0
 suco_de_uvas_concentrado,1979,2751886
 nan,1979,29719709
-outros_outros_vinhos_(sem_informdetalhada,1979,0
+outros_outros_vinhos_sem_informdetalhada,1979,0
 outros_agrin,1979,0
 outros_aguardente,1979,0
 outros_alcool_vinico,1979,0
@@ -645,7 +645,7 @@ suco_organico,1980,0
 outros_sucos,1980,0
 suco_de_uvas_concentrado,1980,4142363
 nan,1980,18053687
-outros_outros_vinhos_(sem_informdetalhada,1980,0
+outros_outros_vinhos_sem_informdetalhada,1980,0
 outros_agrin,1980,0
 outros_aguardente,1980,0
 outros_alcool_vinico,1980,0
@@ -707,7 +707,7 @@ suco_organico,1981,0
 outros_sucos,1981,0
 suco_de_uvas_concentrado,1981,3064156
 nan,1981,19698180
-outros_outros_vinhos_(sem_informdetalhada,1981,0
+outros_outros_vinhos_sem_informdetalhada,1981,0
 outros_agrin,1981,0
 outros_aguardente,1981,0
 outros_alcool_vinico,1981,0
@@ -769,7 +769,7 @@ suco_organico,1982,0
 outros_sucos,1982,0
 suco_de_uvas_concentrado,1982,3148110
 nan,1982,17770629
-outros_outros_vinhos_(sem_informdetalhada,1982,0
+outros_outros_vinhos_sem_informdetalhada,1982,0
 outros_agrin,1982,0
 outros_aguardente,1982,0
 outros_alcool_vinico,1982,0
@@ -831,7 +831,7 @@ suco_organico,1983,0
 outros_sucos,1983,0
 suco_de_uvas_concentrado,1983,3447837
 nan,1983,13706809
-outros_outros_vinhos_(sem_informdetalhada,1983,0
+outros_outros_vinhos_sem_informdetalhada,1983,0
 outros_agrin,1983,0
 outros_aguardente,1983,0
 outros_alcool_vinico,1983,0
@@ -893,7 +893,7 @@ suco_organico,1984,0
 outros_sucos,1984,0
 suco_de_uvas_concentrado,1984,3923167
 nan,1984,15284617
-outros_outros_vinhos_(sem_informdetalhada,1984,0
+outros_outros_vinhos_sem_informdetalhada,1984,0
 outros_agrin,1984,0
 outros_aguardente,1984,0
 outros_alcool_vinico,1984,0
@@ -955,7 +955,7 @@ suco_organico,1985,0
 outros_sucos,1985,0
 suco_de_uvas_concentrado,1985,5736808
 nan,1985,15655775
-outros_outros_vinhos_(sem_informdetalhada,1985,0
+outros_outros_vinhos_sem_informdetalhada,1985,0
 outros_agrin,1985,0
 outros_aguardente,1985,0
 outros_alcool_vinico,1985,0
@@ -1017,7 +1017,7 @@ suco_organico,1986,0
 outros_sucos,1986,0
 suco_de_uvas_concentrado,1986,7553410
 nan,1986,19777809
-outros_outros_vinhos_(sem_informdetalhada,1986,0
+outros_outros_vinhos_sem_informdetalhada,1986,0
 outros_agrin,1986,0
 outros_aguardente,1986,0
 outros_alcool_vinico,1986,0
@@ -1079,7 +1079,7 @@ suco_organico,1987,0
 outros_sucos,1987,0
 suco_de_uvas_concentrado,1987,5969562
 nan,1987,25522173
-outros_outros_vinhos_(sem_informdetalhada,1987,0
+outros_outros_vinhos_sem_informdetalhada,1987,0
 outros_agrin,1987,0
 outros_aguardente,1987,0
 outros_alcool_vinico,1987,0
@@ -1141,7 +1141,7 @@ suco_organico,1988,0
 outros_sucos,1988,0
 suco_de_uvas_concentrado,1988,5656096
 nan,1988,24276716
-outros_outros_vinhos_(sem_informdetalhada,1988,0
+outros_outros_vinhos_sem_informdetalhada,1988,0
 outros_agrin,1988,0
 outros_aguardente,1988,0
 outros_alcool_vinico,1988,0
@@ -1203,7 +1203,7 @@ suco_organico,1989,0
 outros_sucos,1989,0
 suco_de_uvas_concentrado,1989,6716197
 nan,1989,19148275
-outros_outros_vinhos_(sem_informdetalhada,1989,0
+outros_outros_vinhos_sem_informdetalhada,1989,0
 outros_agrin,1989,0
 outros_aguardente,1989,0
 outros_alcool_vinico,1989,0
@@ -1265,7 +1265,7 @@ suco_organico,1990,0
 outros_sucos,1990,0
 suco_de_uvas_concentrado,1990,8211959
 nan,1990,17145444
-outros_outros_vinhos_(sem_informdetalhada,1990,0
+outros_outros_vinhos_sem_informdetalhada,1990,0
 outros_agrin,1990,0
 outros_aguardente,1990,0
 outros_alcool_vinico,1990,0
@@ -1327,7 +1327,7 @@ suco_organico,1991,0
 outros_sucos,1991,0
 suco_de_uvas_concentrado,1991,7311205
 nan,1991,18701133
-outros_outros_vinhos_(sem_informdetalhada,1991,0
+outros_outros_vinhos_sem_informdetalhada,1991,0
 outros_agrin,1991,0
 outros_aguardente,1991,0
 outros_alcool_vinico,1991,0
@@ -1389,7 +1389,7 @@ suco_organico,1992,0
 outros_sucos,1992,0
 suco_de_uvas_concentrado,1992,10607336
 nan,1992,13669760
-outros_outros_vinhos_(sem_informdetalhada,1992,0
+outros_outros_vinhos_sem_informdetalhada,1992,0
 outros_agrin,1992,0
 outros_aguardente,1992,0
 outros_alcool_vinico,1992,0
@@ -1451,7 +1451,7 @@ suco_organico,1993,0
 outros_sucos,1993,0
 suco_de_uvas_concentrado,1993,12178160
 nan,1993,17047905
-outros_outros_vinhos_(sem_informdetalhada,1993,0
+outros_outros_vinhos_sem_informdetalhada,1993,0
 outros_agrin,1993,0
 outros_aguardente,1993,0
 outros_alcool_vinico,1993,0
@@ -1513,7 +1513,7 @@ suco_organico,1994,0
 outros_sucos,1994,0
 suco_de_uvas_concentrado,1994,10005084
 nan,1994,21351477
-outros_outros_vinhos_(sem_informdetalhada,1994,0
+outros_outros_vinhos_sem_informdetalhada,1994,0
 outros_agrin,1994,0
 outros_aguardente,1994,0
 outros_alcool_vinico,1994,0
@@ -1575,7 +1575,7 @@ suco_organico,1995,0
 outros_sucos,1995,0
 suco_de_uvas_concentrado,1995,11029248
 nan,1995,21348586
-outros_outros_vinhos_(sem_informdetalhada,1995,0
+outros_outros_vinhos_sem_informdetalhada,1995,0
 outros_agrin,1995,0
 outros_aguardente,1995,0
 outros_alcool_vinico,1995,0
@@ -1637,7 +1637,7 @@ suco_organico,1996,0
 outros_sucos,1996,0
 suco_de_uvas_concentrado,1996,11625777
 nan,1996,27574147
-outros_outros_vinhos_(sem_informdetalhada,1996,0
+outros_outros_vinhos_sem_informdetalhada,1996,0
 outros_agrin,1996,0
 outros_aguardente,1996,0
 outros_alcool_vinico,1996,0
@@ -1699,7 +1699,7 @@ suco_organico,1997,0
 outros_sucos,1997,0
 suco_de_uvas_concentrado,1997,16724519
 nan,1997,31437414
-outros_outros_vinhos_(sem_informdetalhada,1997,0
+outros_outros_vinhos_sem_informdetalhada,1997,0
 outros_agrin,1997,0
 outros_aguardente,1997,0
 outros_alcool_vinico,1997,0
@@ -1761,7 +1761,7 @@ suco_organico,1998,0
 outros_sucos,1998,0
 suco_de_uvas_concentrado,1998,13944137
 nan,1998,29935005
-outros_outros_vinhos_(sem_informdetalhada,1998,0
+outros_outros_vinhos_sem_informdetalhada,1998,0
 outros_agrin,1998,0
 outros_aguardente,1998,0
 outros_alcool_vinico,1998,0
@@ -1823,7 +1823,7 @@ suco_organico,1999,0
 outros_sucos,1999,0
 suco_de_uvas_concentrado,1999,16261806
 nan,1999,34388096
-outros_outros_vinhos_(sem_informdetalhada,1999,0
+outros_outros_vinhos_sem_informdetalhada,1999,0
 outros_agrin,1999,0
 outros_aguardente,1999,0
 outros_alcool_vinico,1999,0
@@ -1885,7 +1885,7 @@ suco_organico,2000,0
 outros_sucos,2000,0
 suco_de_uvas_concentrado,2000,15315971
 nan,2000,37168164
-outros_outros_vinhos_(sem_informdetalhada,2000,0
+outros_outros_vinhos_sem_informdetalhada,2000,0
 outros_agrin,2000,0
 outros_aguardente,2000,0
 outros_alcool_vinico,2000,0
@@ -1947,7 +1947,7 @@ suco_organico,2001,0
 outros_sucos,2001,0
 suco_de_uvas_concentrado,2001,14704091
 nan,2001,30853863
-outros_outros_vinhos_(sem_informdetalhada,2001,0
+outros_outros_vinhos_sem_informdetalhada,2001,0
 outros_agrin,2001,0
 outros_aguardente,2001,0
 outros_alcool_vinico,2001,0
@@ -2009,7 +2009,7 @@ suco_organico,2002,0
 outros_sucos,2002,0
 suco_de_uvas_concentrado,2002,16499202
 nan,2002,29950775
-outros_outros_vinhos_(sem_informdetalhada,2002,0
+outros_outros_vinhos_sem_informdetalhada,2002,0
 outros_agrin,2002,0
 outros_aguardente,2002,0
 outros_alcool_vinico,2002,0
@@ -2071,7 +2071,7 @@ suco_organico,2003,0
 outros_sucos,2003,0
 suco_de_uvas_concentrado,2003,15246651
 nan,2003,29636903
-outros_outros_vinhos_(sem_informdetalhada,2003,0
+outros_outros_vinhos_sem_informdetalhada,2003,0
 outros_agrin,2003,0
 outros_aguardente,2003,0
 outros_alcool_vinico,2003,0
@@ -2133,7 +2133,7 @@ suco_organico,2004,0
 outros_sucos,2004,0
 suco_de_uvas_concentrado,2004,19218964
 nan,2004,32261664
-outros_outros_vinhos_(sem_informdetalhada,2004,0
+outros_outros_vinhos_sem_informdetalhada,2004,0
 outros_agrin,2004,7861278
 outros_aguardente,2004,0
 outros_alcool_vinico,2004,0
@@ -2195,7 +2195,7 @@ suco_organico,2005,0
 outros_sucos,2005,0
 suco_de_uvas_concentrado,2005,23221898
 nan,2005,32226420
-outros_outros_vinhos_(sem_informdetalhada,2005,0
+outros_outros_vinhos_sem_informdetalhada,2005,0
 outros_agrin,2005,7419736
 outros_aguardente,2005,0
 outros_alcool_vinico,2005,0
@@ -2257,7 +2257,7 @@ suco_organico,2006,0
 outros_sucos,2006,0
 suco_de_uvas_concentrado,2006,23228388
 nan,2006,27088994
-outros_outros_vinhos_(sem_informdetalhada,2006,0
+outros_outros_vinhos_sem_informdetalhada,2006,0
 outros_agrin,2006,7677906
 outros_aguardente,2006,0
 outros_alcool_vinico,2006,0
@@ -2319,7 +2319,7 @@ suco_organico,2007,0
 outros_sucos,2007,0
 suco_de_uvas_concentrado,2007,25603588
 nan,2007,27833872
-outros_outros_vinhos_(sem_informdetalhada,2007,0
+outros_outros_vinhos_sem_informdetalhada,2007,0
 outros_agrin,2007,7188135
 outros_aguardente,2007,0
 outros_alcool_vinico,2007,0
@@ -2381,7 +2381,7 @@ suco_organico,2008,0
 outros_sucos,2008,0
 suco_de_uvas_concentrado,2008,27880465
 nan,2008,28697650
-outros_outros_vinhos_(sem_informdetalhada,2008,0
+outros_outros_vinhos_sem_informdetalhada,2008,0
 outros_agrin,2008,7268443
 outros_aguardente,2008,0
 outros_alcool_vinico,2008,0
@@ -2443,7 +2443,7 @@ suco_organico,2009,0
 outros_sucos,2009,0
 suco_de_uvas_concentrado,2009,31861857
 nan,2009,26554757
-outros_outros_vinhos_(sem_informdetalhada,2009,0
+outros_outros_vinhos_sem_informdetalhada,2009,0
 outros_agrin,2009,6745427
 outros_aguardente,2009,0
 outros_alcool_vinico,2009,0
@@ -2505,7 +2505,7 @@ suco_organico,2010,0
 outros_sucos,2010,0
 suco_de_uvas_concentrado,2010,30827991
 nan,2010,29023870
-outros_outros_vinhos_(sem_informdetalhada,2010,0
+outros_outros_vinhos_sem_informdetalhada,2010,0
 outros_agrin,2010,6852708
 outros_aguardente,2010,0
 outros_alcool_vinico,2010,0
@@ -2567,7 +2567,7 @@ suco_organico,2011,0
 outros_sucos,2011,0
 suco_de_uvas_concentrado,2011,34892316
 nan,2011,28783827
-outros_outros_vinhos_(sem_informdetalhada,2011,0
+outros_outros_vinhos_sem_informdetalhada,2011,0
 outros_agrin,2011,5997697
 outros_aguardente,2011,0
 outros_alcool_vinico,2011,0
@@ -2629,7 +2629,7 @@ suco_organico,2012,0
 outros_sucos,2012,0
 suco_de_uvas_concentrado,2012,33529324
 nan,2012,30316511
-outros_outros_vinhos_(sem_informdetalhada,2012,0
+outros_outros_vinhos_sem_informdetalhada,2012,0
 outros_agrin,2012,5311258
 outros_aguardente,2012,0
 outros_alcool_vinico,2012,0
@@ -2691,7 +2691,7 @@ suco_organico,2013,0
 outros_sucos,2013,0
 suco_de_uvas_concentrado,2013,38369914
 nan,2013,36841561
-outros_outros_vinhos_(sem_informdetalhada,2013,0
+outros_outros_vinhos_sem_informdetalhada,2013,0
 outros_agrin,2013,56936
 outros_aguardente,2013,0
 outros_alcool_vinico,2013,0
@@ -2753,7 +2753,7 @@ suco_organico,2014,0
 outros_sucos,2014,0
 suco_de_uvas_concentrado,2014,39359935
 nan,2014,34963296
-outros_outros_vinhos_(sem_informdetalhada,2014,0
+outros_outros_vinhos_sem_informdetalhada,2014,0
 outros_agrin,2014,0
 outros_aguardente,2014,0
 outros_alcool_vinico,2014,0
@@ -2815,7 +2815,7 @@ suco_organico,2015,0
 outros_sucos,2015,0
 suco_de_uvas_concentrado,2015,34923477
 nan,2015,31922948
-outros_outros_vinhos_(sem_informdetalhada,2015,0
+outros_outros_vinhos_sem_informdetalhada,2015,0
 outros_agrin,2015,0
 outros_aguardente,2015,5
 outros_alcool_vinico,2015,0
@@ -2877,7 +2877,7 @@ suco_organico,2016,0
 outros_sucos,2016,0
 suco_de_uvas_concentrado,2016,28859784
 nan,2016,27120309
-outros_outros_vinhos_(sem_informdetalhada,2016,0
+outros_outros_vinhos_sem_informdetalhada,2016,0
 outros_agrin,2016,0
 outros_aguardente,2016,0
 outros_alcool_vinico,2016,6315
@@ -2939,7 +2939,7 @@ suco_organico,2017,0
 outros_sucos,2017,0
 suco_de_uvas_concentrado,2017,26815645
 nan,2017,28027052
-outros_outros_vinhos_(sem_informdetalhada,2017,0
+outros_outros_vinhos_sem_informdetalhada,2017,0
 outros_agrin,2017,0
 outros_aguardente,2017,0
 outros_alcool_vinico,2017,49662
@@ -3001,7 +3001,7 @@ suco_organico,2018,0
 outros_sucos,2018,0
 suco_de_uvas_concentrado,2018,23572263
 nan,2018,31246158
-outros_outros_vinhos_(sem_informdetalhada,2018,3734763
+outros_outros_vinhos_sem_informdetalhada,2018,3734763
 outros_agrin,2018,0
 outros_aguardente,2018,0
 outros_alcool_vinico,2018,21575
@@ -3063,7 +3063,7 @@ suco_organico,2019,416849
 outros_sucos,2019,8102151
 suco_de_uvas_concentrado,2019,28721470
 nan,2019,34794651
-outros_outros_vinhos_(sem_informdetalhada,2019,310886
+outros_outros_vinhos_sem_informdetalhada,2019,310886
 outros_agrin,2019,0
 outros_aguardente,2019,0
 outros_alcool_vinico,2019,0
@@ -3125,7 +3125,7 @@ suco_organico,2020,553391
 outros_sucos,2020,7815879
 suco_de_uvas_concentrado,2020,22422414
 nan,2020,26547242
-outros_outros_vinhos_(sem_informdetalhada,2020,192057
+outros_outros_vinhos_sem_informdetalhada,2020,192057
 outros_agrin,2020,0
 outros_aguardente,2020,866
 outros_alcool_vinico,2020,6640
@@ -3187,7 +3187,7 @@ suco_organico,2021,902299
 outros_sucos,2021,5541100
 suco_de_uvas_concentrado,2021,26730942
 nan,2021,26657930
-outros_outros_vinhos_(sem_informdetalhada,2021,17618
+outros_outros_vinhos_sem_informdetalhada,2021,17618
 outros_agrin,2021,0
 outros_aguardente,2021,0
 outros_alcool_vinico,2021,0
@@ -3249,7 +3249,7 @@ suco_organico,2022,1002685
 outros_sucos,2022,5588403
 suco_de_uvas_concentrado,2022,33632834
 nan,2022,31704382
-outros_outros_vinhos_(sem_informdetalhada,2022,8812
+outros_outros_vinhos_sem_informdetalhada,2022,8812
 outros_agrin,2022,0
 outros_aguardente,2022,0
 outros_alcool_vinico,2022,0
@@ -3311,7 +3311,7 @@ suco_organico,2023,932154
 outros_sucos,2023,1825635
 suco_de_uvas_concentrado,2023,37852507
 nan,2023,29889342
-outros_outros_vinhos_(sem_informdetalhada,2023,8152
+outros_outros_vinhos_sem_informdetalhada,2023,8152
 outros_agrin,2023,0
 outros_aguardente,2023,111
 outros_alcool_vinico,2023,0

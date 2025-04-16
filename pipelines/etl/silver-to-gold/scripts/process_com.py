@@ -97,37 +97,37 @@ def dimensional_modeling_csv(path):
                             attr["processamento"] = proc
                             break
                 
-            # SECTION: OUTROS
-            if attr["categoria"] == "outros":
-                subcat_list = [
-                    "vinhos", "agrin", "aguardente", "alcool", "bagaceira", "base", "bebida",
-                    "borra", "brandy", "cooler", "coquetel", "destilado", "filtrado", "jeropiga",
-                    "mistelas", "mosto", "nectar", "produtos", "polpa", "preparado", "refrigerante",
-                    "sangria", "vinagre", "vinho"
-                ]
+                # SECTION: OUTROS
+                if attr["categoria"] == "outros":
+                    subcat_list = [
+                        "vinhos", "agrin", "aguardente", "alcool", "bagaceira", "base", "bebida",
+                        "borra", "brandy", "cooler", "coquetel", "destilado", "filtrado", "jeropiga",
+                        "mistelas", "mosto", "nectar", "produtos", "polpa", "preparado", "refrigerante",
+                        "sangria", "vinagre", "vinho"
+                    ]
 
-                for token in tokens:
-                    if token in subcat_list:
-                        attr["subcategoria"] = token
-                        break
-
-                if "champenoise" in tokens:
-                    attr["metodo_processo"] = "champenoise"
-                elif "charmat" in tokens:
-                    attr["metodo_processo"] = "charmat"
-
-                for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acetificado", "composto", "gaseificado"]:
-                    if estilo in tokens:
-                        attr["tipo_estilo"] = estilo
-                        break
-
-                if "parcialmente" in tokens and "fermentado" in tokens:
-                    attr["processamento"] = "parcialmente fermentado"
-                else:
-                    for proc in ["simples", "concentrado", "dessulfitado", "sulfitado"]:
-                        if proc in tokens:
-                            attr["processamento"] = proc
+                    for token in tokens:
+                        if token in subcat_list:
+                            attr["subcategoria"] = token
                             break
+
+                    if "champenoise" in tokens:
+                        attr["metodo_processo"] = "champenoise"
+                    elif "charmat" in tokens:
+                        attr["metodo_processo"] = "charmat"
+
+                    for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acetificado", "composto", "gaseificado"]:
+                        if estilo in tokens:
+                            attr["tipo_estilo"] = estilo
+                            break
+
+                    if "parcialmente" in tokens and "fermentado" in tokens:
+                        attr["processamento"] = "parcialmente fermentado"
+                    else:
+                        for proc in ["simples", "concentrado", "dessulfitado", "sulfitado"]:
+                            if proc in tokens:
+                                attr["processamento"] = proc
+                                break
 
             attr_mapping[original_value] = attr
 
@@ -139,7 +139,8 @@ def dimensional_modeling_csv(path):
 
     try:
         logging.info("Mapping attributes to DataFrame columns")
-
+        
+        df["control"] = df["control"].fillna("outros_produtos_comercializados")
         df["categoria"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("categoria"))
         df["subcategoria"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("subcategoria"))
         df["tipo_estilo"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("tipo_estilo"))
@@ -162,6 +163,7 @@ def main():
     enriched attributes, and saves the transformed data into the gold layer.
     """
     try:
+        logging.info("Starting process_com.py")
         csv_path = os.path.join("data", "silver-layer", "comercio.csv")
         gold_path = "data/gold-layer"
         output_file = os.path.join(gold_path, "comercio.csv")
@@ -172,10 +174,11 @@ def main():
         os.makedirs(gold_path, exist_ok=True)
         df.to_csv(output_file, index=False)
         logging.info("Process completed successfully. Output saved to: %s", output_file)
-        return df
+        print(f"New processed data is in: {output_file}")
+
     except Exception as e:
         logging.error("Critical error in main: %s", e)
-        raise
+        print(f"ETL process failed: {e}")
 
 if __name__ == '__main__':
     processed_df = main()
