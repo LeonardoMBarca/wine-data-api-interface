@@ -19,9 +19,12 @@ def process_csv(path, sep):
         raise ValueError(f"Error reading CSV file: {e}")
     
     standardize_dict = {
-    '\*':'',
+    ',': ' ',
+    '\*':'',  
     'nd':'',
-    'br_':'brancaserosadas_',
+    'brancaserosadas': 'brancas_rosadas',
+    'br_':'brancas_rosadas_',
+    'sc': 'sem_classificacao',
     '\(':'_',
     '\"':'',
     '\)': '',
@@ -35,7 +38,7 @@ def process_csv(path, sep):
     'ã':'a',
     'õ':'o',
     'ti_':'tintas_',
-    ' ':'_',
+    ' ':'_'
     }
 
     df = standardize_dataframe(df, standardize_dict)
