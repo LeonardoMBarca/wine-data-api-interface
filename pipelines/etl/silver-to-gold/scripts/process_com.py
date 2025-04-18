@@ -39,6 +39,7 @@ def dimensional_modeling_csv(path):
         raise RuntimeError("Failed to extract tokens from 'control' column") from e
 
     attr_mapping = {}
+    total_values = ["vinho_de_mesa", "vinho_fino_de_mesa", "vinho_frizante", "vinho_organico", "vinho_especial", "espumantes", "suco_de_uvas", "suco_de_uvas_concentrado", "outros_produtos_comercializados"]
     try:
         logging.info("Building attribute mapping based on tokens")
 
@@ -50,84 +51,91 @@ def dimensional_modeling_csv(path):
                 "tipo_estilo": None,
                 "processamento": None,
                 "variedade_origem": None,
-                "metodo_processo": None
+                "metodo_processo": None,
+                "total": None
             }
 
-            if tokens and tokens[0] in ["vinho", "espumante", "suco", "outros"]:
+            if tokens and tokens[0] in ["vinho", "espumante", "espumantes", "suco", "outros"]:
                 attr["categoria"] = tokens[0]
 
-                #SECTION: VINHO
-                if attr["categoria"] == "vinho":
-                    if "mesa" in tokens:
-                        attr["subcategoria"] = "mesa"
-                    
-                    for estilo in ["tinto", "branco", "rosado"]:
-                        if estilo in tokens:
-                            attr["tipo_estilo"] = estilo
-                            break
+                if original_value in total_values:
+                    attr["total"] = 1
 
-                        if "fino" in tokens:
-                            attr["processamento"] = "fino"
+                else:
+                    attr["total"] = 0
+                    #SECTION: VINHO
+                    if attr["categoria"] == "vinho":
+                        if "mesa" in tokens:
+                            attr["subcategoria"] = "mesa"
                         
-
-                        for var in ["vinifera", "viniferas"]:
-                            if var in tokens:
-                                attr["variedade_origem"] = var
+                        for estilo in ["tinto", "branco", "rosado"]:
+                            if estilo in tokens:
+                                attr["tipo_estilo"] = estilo
                                 break
-                # SECTION: ESPUMANTE
-                if attr["categoria"] == "espumante":
-                    if "moscatel" in tokens:
-                        attr["tipo_estilo"] = "moscatel"
 
-                    for proc in ["organico"]:
-                        if proc in tokens:
-                            attr["metodo_processo"] = proc
-                            break
+                            if "fino" in tokens:
+                                attr["processamento"] = "fino"
+                            
 
-                # SECTION: SUCO
-                if attr["categoria"] == "suco":
-                    if "uva" in tokens or "uvas" in tokens:
-                        attr["variedade_origem"] = "uva"
+                            for var in ["vinifera", "viniferas"]:
+                                if var in tokens:
+                                    attr["variedade_origem"] = var
+                                    break
+                                
+                    # SECTION: ESPUMANTE
+                    if attr["categoria"] == "espumante":
+                        if "moscatel" in tokens:
+                            attr["tipo_estilo"] = "moscatel"
 
-                    if "concentrado" in tokens:
-                        attr["tipo_estilo"] = "concentrado"
+                        for proc in ["organico"]:
+                            if proc in tokens:
+                                attr["metodo_processo"] = proc
+                                break
 
-                    for proc in ["reprocessado", "adocado", "natural", "organico"]:
-                        if proc in tokens:
-                            attr["processamento"] = proc
-                            break
-                
-                # SECTION: OUTROS
-                if attr["categoria"] == "outros":
-                    subcat_list = [
-                        "vinhos", "agrin", "aguardente", "alcool", "bagaceira", "base", "bebida",
-                        "borra", "brandy", "cooler", "coquetel", "destilado", "filtrado", "jeropiga",
-                        "mistelas", "mosto", "nectar", "produtos", "polpa", "preparado", "refrigerante",
-                        "sangria", "vinagre", "vinho"
-                    ]
+                    # SECTION: SUCO
+                    if attr["categoria"] == "suco":
+                        if "uva" in tokens or "uvas" in tokens:
+                            attr["variedade_origem"] = "uva"
 
-                    for token in tokens:
-                        if token in subcat_list:
-                            attr["subcategoria"] = token
-                            break
+                        if "concentrado" in tokens:
+                            attr["tipo_estilo"] = "concentrado"
 
-                    if "champenoise" in tokens:
-                        attr["metodo_processo"] = "champenoise"
-                    elif "charmat" in tokens:
-                        attr["metodo_processo"] = "charmat"
-
-                    for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acetificado", "composto", "gaseificado"]:
-                        if estilo in tokens:
-                            attr["tipo_estilo"] = estilo
-                            break
-
-                    if "parcialmente" in tokens and "fermentado" in tokens:
-                        attr["processamento"] = "parcialmente fermentado"
-                    else:
-                        for proc in ["simples", "concentrado", "dessulfitado", "sulfitado"]:
+                        for proc in ["reprocessado", "adocado", "natural", "organico"]:
                             if proc in tokens:
                                 attr["processamento"] = proc
                                 break
+                    
+                    # SECTION: OUTROS
+                    if attr["categoria"] == "outros":
+                        subcat_list = [
+                            "vinhos", "agrin", "aguardente", "alcool", "bagaceira", "base", "bebida",
+                            "borra", "brandy", "cooler", "coquetel", "destilado", "filtrado", "jeropiga",
+                            "mistelas", "mosto", "nectar", "produtos", "polpa", "preparado", "refrigerante",
+                            "sangria", "vinagre", "vinho"
+                        ]
+
+                        for token in tokens:
+                            if token in subcat_list:
+                                attr["subcategoria"] = token
+                                break
+
+                        if "champenoise" in tokens:
+                            attr["metodo_processo"] = "champenoise"
+                        elif "charmat" in tokens:
+                            attr["metodo_processo"] = "charmat"
+
+                        for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acetificado", "composto", "gaseificado"]:
+                            if estilo in tokens:
+                                attr["tipo_estilo"] = estilo
+                                break
+
+                        if "parcialmente" in tokens and "fermentado" in tokens:
+                            attr["processamento"] = "parcialmente fermentado"
+                        else:
+                            for proc in ["simples", "concentrado", "dessulfitado", "sulfitado"]:
+                                if proc in tokens:
+                                    attr["processamento"] = proc
+                                    break
 
             attr_mapping[original_value] = attr
 
@@ -147,6 +155,7 @@ def dimensional_modeling_csv(path):
         df["processamento"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("processamento"))
         df["variedade_origem"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("variedade_origem"))
         df["metodo_processo"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("metodo_processo"))
+        df["total"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("total"))
 
         logging.info("Attribute mapping applied successfully to DataFrame")
 

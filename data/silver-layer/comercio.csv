@@ -3,7 +3,7 @@ vinho_de_mesa,1970,98327606
 vinho_mesa_tinto,1970,83300735
 vinho_mesa_rosado,1970,107681
 vinho_mesa_branco,1970,14919190
-vinho__fino_de_mesa,1970,4430629
+vinho_fino_de_mesa,1970,4430629
 vinho_mesa_tinto,1970,435354
 vinho_mesa_rosado,1970,183234
 vinho_mesa_branco,1970,3812041
@@ -13,7 +13,7 @@ vinho_especial,1970,7325789
 vinho_especial_tinto,1970,4730346
 vinho_especial_rosado,1970,1229564
 vinho_especial_branco,1970,1365879
-espumantes_,1970,2743678
+espumantes,1970,2743678
 espumante_moscatel,1970,0
 espumante,1970,0
 espumante_organico,1970,0
@@ -65,7 +65,7 @@ vinho_de_mesa,1971,114399031
 vinho_mesa_tinto,1971,98522869
 vinho_mesa_rosado,1971,542274
 vinho_mesa_branco,1971,15333888
-vinho__fino_de_mesa,1971,4840369
+vinho_fino_de_mesa,1971,4840369
 vinho_mesa_tinto,1971,428927
 vinho_mesa_rosado,1971,227299
 vinho_mesa_branco,1971,4184143
@@ -75,7 +75,7 @@ vinho_especial,1971,7824931
 vinho_especial_tinto,1971,4802828
 vinho_especial_rosado,1971,1662821
 vinho_especial_branco,1971,1359282
-espumantes_,1971,2907289
+espumantes,1971,2907289
 espumante_moscatel,1971,0
 espumante,1971,0
 espumante_organico,1971,0
@@ -127,7 +127,7 @@ vinho_de_mesa,1972,118377367
 vinho_mesa_tinto,1972,101167932
 vinho_mesa_rosado,1972,7770851
 vinho_mesa_branco,1972,9438584
-vinho__fino_de_mesa,1972,5602091
+vinho_fino_de_mesa,1972,5602091
 vinho_mesa_tinto,1972,624499
 vinho_mesa_rosado,1972,403664
 vinho_mesa_branco,1972,4573928
@@ -137,7 +137,7 @@ vinho_especial,1972,8737605
 vinho_especial_tinto,1972,4347706
 vinho_especial_rosado,1972,1901801
 vinho_especial_branco,1972,2488098
-espumantes_,1972,3523335
+espumantes,1972,3523335
 espumante_moscatel,1972,0
 espumante,1972,0
 espumante_organico,1972,0
@@ -189,7 +189,7 @@ vinho_de_mesa,1973,116617910
 vinho_mesa_tinto,1973,98196747
 vinho_mesa_rosado,1973,8425617
 vinho_mesa_branco,1973,9995546
-vinho__fino_de_mesa,1973,7202830
+vinho_fino_de_mesa,1973,7202830
 vinho_mesa_tinto,1973,783508
 vinho_mesa_rosado,1973,1377333
 vinho_mesa_branco,1973,5041989
@@ -199,7 +199,7 @@ vinho_especial,1973,9693953
 vinho_especial_tinto,1973,5017487
 vinho_especial_rosado,1973,2062011
 vinho_especial_branco,1973,2614455
-espumantes_,1973,3625230
+espumantes,1973,3625230
 espumante_moscatel,1973,0
 espumante,1973,0
 espumante_organico,1973,0
@@ -251,7 +251,7 @@ vinho_de_mesa,1974,94173324
 vinho_mesa_tinto,1974,77167303
 vinho_mesa_rosado,1974,8891367
 vinho_mesa_branco,1974,8114654
-vinho__fino_de_mesa,1974,7571802
+vinho_fino_de_mesa,1974,7571802
 vinho_mesa_tinto,1974,1616144
 vinho_mesa_rosado,1974,1725564
 vinho_mesa_branco,1974,4230094
@@ -261,7 +261,7 @@ vinho_especial,1974,7638484
 vinho_especial_tinto,1974,3763509
 vinho_especial_rosado,1974,1989341
 vinho_especial_branco,1974,1885634
-espumantes_,1974,3442734
+espumantes,1974,3442734
 espumante_moscatel,1974,0
 espumante,1974,0
 espumante_organico,1974,0
@@ -313,7 +313,7 @@ vinho_de_mesa,1975,108031792
 vinho_mesa_tinto,1975,91528090
 vinho_mesa_rosado,1975,7261777
 vinho_mesa_branco,1975,9241925
-vinho__fino_de_mesa,1975,8848303
+vinho_fino_de_mesa,1975,8848303
 vinho_mesa_tinto,1975,2050960
 vinho_mesa_rosado,1975,2130619
 vinho_mesa_branco,1975,4666724
@@ -323,7 +323,7 @@ vinho_especial,1975,10260445
 vinho_especial_tinto,1975,4815235
 vinho_especial_rosado,1975,2885972
 vinho_especial_branco,1975,2559238
-espumantes_,1975,3691348
+espumantes,1975,3691348
 espumante_moscatel,1975,0
 espumante,1975,0
 espumante_organico,1975,0
@@ -375,7 +375,7 @@ vinho_de_mesa,1976,139238614
 vinho_mesa_tinto,1976,116407222
 vinho_mesa_rosado,1976,11748047
 vinho_mesa_branco,1976,11083345
-vinho__fino_de_mesa,1976,14095648
+vinho_fino_de_mesa,1976,14095648
 vinho_mesa_tinto,1976,4450570
 vinho_mesa_rosado,1976,3118919
 vinho_mesa_branco,1976,6526159
@@ -385,7 +385,7 @@ vinho_especial,1976,12392725
 vinho_especial_tinto,1976,4819463
 vinho_especial_rosado,1976,4231765
 vinho_especial_branco,1976,3341497
-espumantes_,1976,4204666
+espumantes,1976,4204666
 espumante_moscatel,1976,0
 espumante,1976,0
 espumante_organico,1976,0
@@ -437,7 +437,7 @@ vinho_de_mesa,1977,140813114
 vinho_mesa_tinto,1977,116609545
 vinho_mesa_rosado,1977,15195525
 vinho_mesa_branco,1977,9008044
-vinho__fino_de_mesa,1977,14975330
+vinho_fino_de_mesa,1977,14975330
 vinho_mesa_tinto,1977,4504303
 vinho_mesa_rosado,1977,3248565
 vinho_mesa_branco,1977,7222462
@@ -447,7 +447,7 @@ vinho_especial,1977,11569676
 vinho_especial_tinto,1977,3959050
 vinho_especial_rosado,1977,4034615
 vinho_especial_branco,1977,3576011
-espumantes_,1977,4150746
+espumantes,1977,4150746
 espumante_moscatel,1977,0
 espumante,1977,0
 espumante_organico,1977,0
@@ -499,7 +499,7 @@ vinho_de_mesa,1978,141293379
 vinho_mesa_tinto,1978,117203914
 vinho_mesa_rosado,1978,14612454
 vinho_mesa_branco,1978,9477011
-vinho__fino_de_mesa,1978,17596956
+vinho_fino_de_mesa,1978,17596956
 vinho_mesa_tinto,1978,4920802
 vinho_mesa_rosado,1978,3501895
 vinho_mesa_branco,1978,9174259
@@ -509,7 +509,7 @@ vinho_especial,1978,10247572
 vinho_especial_tinto,1978,4083073
 vinho_especial_rosado,1978,4177476
 vinho_especial_branco,1978,1987023
-espumantes_,1978,3684240
+espumantes,1978,3684240
 espumante_moscatel,1978,0
 espumante,1978,0
 espumante_organico,1978,0
@@ -561,7 +561,7 @@ vinho_de_mesa,1979,149609112
 vinho_mesa_tinto,1979,119496652
 vinho_mesa_rosado,1979,18643308
 vinho_mesa_branco,1979,11469152
-vinho__fino_de_mesa,1979,21695829
+vinho_fino_de_mesa,1979,21695829
 vinho_mesa_tinto,1979,6360276
 vinho_mesa_rosado,1979,4119615
 vinho_mesa_branco,1979,11215938
@@ -571,7 +571,7 @@ vinho_especial,1979,13790557
 vinho_especial_tinto,1979,7004780
 vinho_especial_rosado,1979,5067851
 vinho_especial_branco,1979,1717926
-espumantes_,1979,3246929
+espumantes,1979,3246929
 espumante_moscatel,1979,0
 espumante,1979,0
 espumante_organico,1979,0
@@ -623,7 +623,7 @@ vinho_de_mesa,1980,122825298
 vinho_mesa_tinto,1980,99646124
 vinho_mesa_rosado,1980,14746625
 vinho_mesa_branco,1980,8432549
-vinho__fino_de_mesa,1980,22976342
+vinho_fino_de_mesa,1980,22976342
 vinho_mesa_tinto,1980,7244385
 vinho_mesa_rosado,1980,5096819
 vinho_mesa_branco,1980,10635138
@@ -633,7 +633,7 @@ vinho_especial,1980,11056774
 vinho_especial_tinto,1980,4608059
 vinho_especial_rosado,1980,4312513
 vinho_especial_branco,1980,2136202
-espumantes_,1980,3257451
+espumantes,1980,3257451
 espumante_moscatel,1980,0
 espumante,1980,0
 espumante_organico,1980,0
@@ -685,7 +685,7 @@ vinho_de_mesa,1981,128894580
 vinho_mesa_tinto,1981,99151812
 vinho_mesa_rosado,1981,16360547
 vinho_mesa_branco,1981,13382221
-vinho__fino_de_mesa,1981,21607857
+vinho_fino_de_mesa,1981,21607857
 vinho_mesa_tinto,1981,7403644
 vinho_mesa_rosado,1981,2738962
 vinho_mesa_branco,1981,11465251
@@ -695,7 +695,7 @@ vinho_especial,1981,6907060
 vinho_especial_tinto,1981,1906240
 vinho_especial_rosado,1981,3388872
 vinho_especial_branco,1981,1611948
-espumantes_,1981,2301421
+espumantes,1981,2301421
 espumante_moscatel,1981,0
 espumante,1981,0
 espumante_organico,1981,0
@@ -747,7 +747,7 @@ vinho_de_mesa,1982,166861772
 vinho_mesa_tinto,1982,131957890
 vinho_mesa_rosado,1982,15786964
 vinho_mesa_branco,1982,19116918
-vinho__fino_de_mesa,1982,26302928
+vinho_fino_de_mesa,1982,26302928
 vinho_mesa_tinto,1982,7699010
 vinho_mesa_rosado,1982,3608877
 vinho_mesa_branco,1982,14995041
@@ -757,7 +757,7 @@ vinho_especial,1982,5011009
 vinho_especial_tinto,1982,939619
 vinho_especial_rosado,1982,2418770
 vinho_especial_branco,1982,1652620
-espumantes_,1982,2432386
+espumantes,1982,2432386
 espumante_moscatel,1982,0
 espumante,1982,0
 espumante_organico,1982,0
@@ -809,7 +809,7 @@ vinho_de_mesa,1983,195616620
 vinho_mesa_tinto,1983,151852639
 vinho_mesa_rosado,1983,23841328
 vinho_mesa_branco,1983,19922653
-vinho__fino_de_mesa,1983,32690119
+vinho_fino_de_mesa,1983,32690119
 vinho_mesa_tinto,1983,9811525
 vinho_mesa_rosado,1983,3548807
 vinho_mesa_branco,1983,19329787
@@ -819,7 +819,7 @@ vinho_especial,1983,5393631
 vinho_especial_tinto,1983,1034452
 vinho_especial_rosado,1983,2735222
 vinho_especial_branco,1983,1623957
-espumantes_,1983,2601590
+espumantes,1983,2601590
 espumante_moscatel,1983,0
 espumante,1983,0
 espumante_organico,1983,0
@@ -871,7 +871,7 @@ vinho_de_mesa,1984,171619507
 vinho_mesa_tinto,1984,129249097
 vinho_mesa_rosado,1984,21724540
 vinho_mesa_branco,1984,20645870
-vinho__fino_de_mesa,1984,42164393
+vinho_fino_de_mesa,1984,42164393
 vinho_mesa_tinto,1984,14797285
 vinho_mesa_rosado,1984,3714334
 vinho_mesa_branco,1984,23652774
@@ -881,7 +881,7 @@ vinho_especial,1984,5535657
 vinho_especial_tinto,1984,1043073
 vinho_especial_rosado,1984,2308400
 vinho_especial_branco,1984,2184184
-espumantes_,1984,2778815
+espumantes,1984,2778815
 espumante_moscatel,1984,0
 espumante,1984,0
 espumante_organico,1984,0
@@ -933,7 +933,7 @@ vinho_de_mesa,1985,185191837
 vinho_mesa_tinto,1985,138710394
 vinho_mesa_rosado,1985,23988088
 vinho_mesa_branco,1985,22493355
-vinho__fino_de_mesa,1985,44599207
+vinho_fino_de_mesa,1985,44599207
 vinho_mesa_tinto,1985,13133683
 vinho_mesa_rosado,1985,3510330
 vinho_mesa_branco,1985,27955194
@@ -943,7 +943,7 @@ vinho_especial,1985,4766741
 vinho_especial_tinto,1985,863932
 vinho_especial_rosado,1985,2145100
 vinho_especial_branco,1985,1757709
-espumantes_,1985,3238436
+espumantes,1985,3238436
 espumante_moscatel,1985,0
 espumante,1985,0
 espumante_organico,1985,0
@@ -995,7 +995,7 @@ vinho_de_mesa,1986,203130018
 vinho_mesa_tinto,1986,153357217
 vinho_mesa_rosado,1986,28544630
 vinho_mesa_branco,1986,21228171
-vinho__fino_de_mesa,1986,50881779
+vinho_fino_de_mesa,1986,50881779
 vinho_mesa_tinto,1986,15664511
 vinho_mesa_rosado,1986,3685709
 vinho_mesa_branco,1986,31531559
@@ -1005,7 +1005,7 @@ vinho_especial,1986,4636751
 vinho_especial_tinto,1986,749197
 vinho_especial_rosado,1986,2057888
 vinho_especial_branco,1986,1829666
-espumantes_,1986,4058335
+espumantes,1986,4058335
 espumante_moscatel,1986,0
 espumante,1986,0
 espumante_organico,1986,0
@@ -1057,7 +1057,7 @@ vinho_de_mesa,1987,131065191
 vinho_mesa_tinto,1987,96590206
 vinho_mesa_rosado,1987,21376304
 vinho_mesa_branco,1987,13098681
-vinho__fino_de_mesa,1987,34335860
+vinho_fino_de_mesa,1987,34335860
 vinho_mesa_tinto,1987,10144561
 vinho_mesa_rosado,1987,2328264
 vinho_mesa_branco,1987,21863035
@@ -1067,7 +1067,7 @@ vinho_especial,1987,2969853
 vinho_especial_tinto,1987,372184
 vinho_especial_rosado,1987,1122648
 vinho_especial_branco,1987,1475021
-espumantes_,1987,3006097
+espumantes,1987,3006097
 espumante_moscatel,1987,0
 espumante,1987,0
 espumante_organico,1987,0
@@ -1119,7 +1119,7 @@ vinho_de_mesa,1988,150678647
 vinho_mesa_tinto,1988,114100716
 vinho_mesa_rosado,1988,17329181
 vinho_mesa_branco,1988,19248750
-vinho__fino_de_mesa,1988,40014386
+vinho_fino_de_mesa,1988,40014386
 vinho_mesa_tinto,1988,11713661
 vinho_mesa_rosado,1988,1939881
 vinho_mesa_branco,1988,26360844
@@ -1129,7 +1129,7 @@ vinho_especial,1988,2328150
 vinho_especial_tinto,1988,525229
 vinho_especial_rosado,1988,887025
 vinho_especial_branco,1988,915896
-espumantes_,1988,2845663
+espumantes,1988,2845663
 espumante_moscatel,1988,0
 espumante,1988,0
 espumante_organico,1988,0
@@ -1181,7 +1181,7 @@ vinho_de_mesa,1989,172921267
 vinho_mesa_tinto,1989,136642954
 vinho_mesa_rosado,1989,14564451
 vinho_mesa_branco,1989,21713862
-vinho__fino_de_mesa,1989,50390262
+vinho_fino_de_mesa,1989,50390262
 vinho_mesa_tinto,1989,14737896
 vinho_mesa_rosado,1989,2596587
 vinho_mesa_branco,1989,33055779
@@ -1191,7 +1191,7 @@ vinho_especial,1989,1788772
 vinho_especial_tinto,1989,288905
 vinho_especial_rosado,1989,876167
 vinho_especial_branco,1989,623700
-espumantes_,1989,3766581
+espumantes,1989,3766581
 espumante_moscatel,1989,0
 espumante,1989,0
 espumante_organico,1989,0
@@ -1243,7 +1243,7 @@ vinho_de_mesa,1990,164725646
 vinho_mesa_tinto,1990,120889721
 vinho_mesa_rosado,1990,16482188
 vinho_mesa_branco,1990,27353737
-vinho__fino_de_mesa,1990,39885259
+vinho_fino_de_mesa,1990,39885259
 vinho_mesa_tinto,1990,11141857
 vinho_mesa_rosado,1990,1583368
 vinho_mesa_branco,1990,27160034
@@ -1253,7 +1253,7 @@ vinho_especial,1990,1371223
 vinho_especial_tinto,1990,266887
 vinho_especial_rosado,1990,595973
 vinho_especial_branco,1990,508363
-espumantes_,1990,2720096
+espumantes,1990,2720096
 espumante_moscatel,1990,0
 espumante,1990,0
 espumante_organico,1990,0
@@ -1305,7 +1305,7 @@ vinho_de_mesa,1991,190134895
 vinho_mesa_tinto,1991,141726264
 vinho_mesa_rosado,1991,16322381
 vinho_mesa_branco,1991,32086250
-vinho__fino_de_mesa,1991,37526111
+vinho_fino_de_mesa,1991,37526111
 vinho_mesa_tinto,1991,9015204
 vinho_mesa_rosado,1991,1342140
 vinho_mesa_branco,1991,27168767
@@ -1315,7 +1315,7 @@ vinho_especial,1991,1354861
 vinho_especial_tinto,1991,326807
 vinho_especial_rosado,1991,487553
 vinho_especial_branco,1991,540501
-espumantes_,1991,2442072
+espumantes,1991,2442072
 espumante_moscatel,1991,0
 espumante,1991,0
 espumante_organico,1991,0
@@ -1367,7 +1367,7 @@ vinho_de_mesa,1992,180230431
 vinho_mesa_tinto,1992,138190489
 vinho_mesa_rosado,1992,12822511
 vinho_mesa_branco,1992,29217431
-vinho__fino_de_mesa,1992,39537060
+vinho_fino_de_mesa,1992,39537060
 vinho_mesa_tinto,1992,10712402
 vinho_mesa_rosado,1992,1130509
 vinho_mesa_branco,1992,27694149
@@ -1377,7 +1377,7 @@ vinho_especial,1992,882564
 vinho_especial_tinto,1992,217945
 vinho_especial_rosado,1992,304897
 vinho_especial_branco,1992,359722
-espumantes_,1992,1846809
+espumantes,1992,1846809
 espumante_moscatel,1992,0
 espumante,1992,0
 espumante_organico,1992,0
@@ -1429,7 +1429,7 @@ vinho_de_mesa,1993,201168480
 vinho_mesa_tinto,1993,157031022
 vinho_mesa_rosado,1993,13767249
 vinho_mesa_branco,1993,30370209
-vinho__fino_de_mesa,1993,49916112
+vinho_fino_de_mesa,1993,49916112
 vinho_mesa_tinto,1993,11988665
 vinho_mesa_rosado,1993,1639949
 vinho_mesa_branco,1993,36287498
@@ -1439,7 +1439,7 @@ vinho_especial,1993,1849251
 vinho_especial_tinto,1993,542146
 vinho_especial_rosado,1993,243582
 vinho_especial_branco,1993,1063523
-espumantes_,1993,2183871
+espumantes,1993,2183871
 espumante_moscatel,1993,0
 espumante,1993,0
 espumante_organico,1993,0
@@ -1491,7 +1491,7 @@ vinho_de_mesa,1994,180295366
 vinho_mesa_tinto,1994,140192480
 vinho_mesa_rosado,1994,13762956
 vinho_mesa_branco,1994,26339930
-vinho__fino_de_mesa,1994,46541918
+vinho_fino_de_mesa,1994,46541918
 vinho_mesa_tinto,1994,13290842
 vinho_mesa_rosado,1994,1631454
 vinho_mesa_branco,1994,31619622
@@ -1501,7 +1501,7 @@ vinho_especial,1994,1423645
 vinho_especial_tinto,1994,589529
 vinho_especial_rosado,1994,104886
 vinho_especial_branco,1994,729230
-espumantes_,1994,2661540
+espumantes,1994,2661540
 espumante_moscatel,1994,0
 espumante,1994,0
 espumante_organico,1994,0
@@ -1553,7 +1553,7 @@ vinho_de_mesa,1995,146583828
 vinho_mesa_tinto,1995,108968350
 vinho_mesa_rosado,1995,11653971
 vinho_mesa_branco,1995,25961507
-vinho__fino_de_mesa,1995,40195501
+vinho_fino_de_mesa,1995,40195501
 vinho_mesa_tinto,1995,12299213
 vinho_mesa_rosado,1995,1540910
 vinho_mesa_branco,1995,26355378
@@ -1563,7 +1563,7 @@ vinho_especial,1995,1396441
 vinho_especial_tinto,1995,628481
 vinho_especial_rosado,1995,86933
 vinho_especial_branco,1995,681027
-espumantes_,1995,2276321
+espumantes,1995,2276321
 espumante_moscatel,1995,0
 espumante,1995,0
 espumante_organico,1995,0
@@ -1615,7 +1615,7 @@ vinho_de_mesa,1996,165831436
 vinho_mesa_tinto,1996,122549540
 vinho_mesa_rosado,1996,13374874
 vinho_mesa_branco,1996,29907022
-vinho__fino_de_mesa,1996,43695771
+vinho_fino_de_mesa,1996,43695771
 vinho_mesa_tinto,1996,13540528
 vinho_mesa_rosado,1996,1457704
 vinho_mesa_branco,1996,28697539
@@ -1625,7 +1625,7 @@ vinho_especial,1996,1261662
 vinho_especial_tinto,1996,264304
 vinho_especial_rosado,1996,70536
 vinho_especial_branco,1996,926822
-espumantes_,1996,2154497
+espumantes,1996,2154497
 espumante_moscatel,1996,0
 espumante,1996,0
 espumante_organico,1996,0
@@ -1677,7 +1677,7 @@ vinho_de_mesa,1997,174768638
 vinho_mesa_tinto,1997,127693158
 vinho_mesa_rosado,1997,13550872
 vinho_mesa_branco,1997,33524608
-vinho__fino_de_mesa,1997,46442209
+vinho_fino_de_mesa,1997,46442209
 vinho_mesa_tinto,1997,18303579
 vinho_mesa_rosado,1997,1997373
 vinho_mesa_branco,1997,26141257
@@ -1687,7 +1687,7 @@ vinho_especial,1997,790617
 vinho_especial_tinto,1997,136027
 vinho_especial_rosado,1997,145144
 vinho_especial_branco,1997,509446
-espumantes_,1997,3054624
+espumantes,1997,3054624
 espumante_moscatel,1997,19222
 espumante,1997,3035402
 espumante_organico,1997,0
@@ -1739,7 +1739,7 @@ vinho_de_mesa,1998,181576649
 vinho_mesa_tinto,1998,133479291
 vinho_mesa_rosado,1998,12980172
 vinho_mesa_branco,1998,35117186
-vinho__fino_de_mesa,1998,32456318
+vinho_fino_de_mesa,1998,32456318
 vinho_mesa_tinto,1998,11925188
 vinho_mesa_rosado,1998,1585687
 vinho_mesa_branco,1998,18945443
@@ -1749,7 +1749,7 @@ vinho_especial,1998,194075
 vinho_especial_tinto,1998,50870
 vinho_especial_rosado,1998,2074
 vinho_especial_branco,1998,141131
-espumantes_,1998,3253174
+espumantes,1998,3253174
 espumante_moscatel,1998,29712
 espumante,1998,3223462
 espumante_organico,1998,0
@@ -1801,7 +1801,7 @@ vinho_de_mesa,1999,200578746
 vinho_mesa_tinto,1999,150857434
 vinho_mesa_rosado,1999,13221934
 vinho_mesa_branco,1999,36499378
-vinho__fino_de_mesa,1999,37096571
+vinho_fino_de_mesa,1999,37096571
 vinho_mesa_tinto,1999,14706398
 vinho_mesa_rosado,1999,1479987
 vinho_mesa_branco,1999,20910186
@@ -1811,7 +1811,7 @@ vinho_especial,1999,234696
 vinho_especial_tinto,1999,56589
 vinho_especial_rosado,1999,112392
 vinho_especial_branco,1999,65715
-espumantes_,1999,5606536
+espumantes,1999,5606536
 espumante_moscatel,1999,50670
 espumante,1999,5555866
 espumante_organico,1999,0
@@ -1863,7 +1863,7 @@ vinho_de_mesa,2000,221023603
 vinho_mesa_tinto,2000,172183792
 vinho_mesa_rosado,2000,9150927
 vinho_mesa_branco,2000,39688884
-vinho__fino_de_mesa,2000,34195829
+vinho_fino_de_mesa,2000,34195829
 vinho_mesa_tinto,2000,15119076
 vinho_mesa_rosado,2000,1021310
 vinho_mesa_branco,2000,18055443
@@ -1873,7 +1873,7 @@ vinho_especial,2000,249345
 vinho_especial_tinto,2000,177872
 vinho_especial_rosado,2000,0
 vinho_especial_branco,2000,71473
-espumantes_,2000,4330795
+espumantes,2000,4330795
 espumante_moscatel,2000,194723
 espumante,2000,4136072
 espumante_organico,2000,0
@@ -1925,7 +1925,7 @@ vinho_de_mesa,2001,221518224
 vinho_mesa_tinto,2001,176793696
 vinho_mesa_rosado,2001,7283912
 vinho_mesa_branco,2001,37440616
-vinho__fino_de_mesa,2001,28701658
+vinho_fino_de_mesa,2001,28701658
 vinho_mesa_tinto,2001,12112495
 vinho_mesa_rosado,2001,790176
 vinho_mesa_branco,2001,15798987
@@ -1935,7 +1935,7 @@ vinho_especial,2001,492272
 vinho_especial_tinto,2001,281260
 vinho_especial_rosado,2001,12833
 vinho_especial_branco,2001,198179
-espumantes_,2001,4494015
+espumantes,2001,4494015
 espumante_moscatel,2001,474162
 espumante,2001,4019853
 espumante_organico,2001,0
@@ -1987,7 +1987,7 @@ vinho_de_mesa,2002,227447392
 vinho_mesa_tinto,2002,181274195
 vinho_mesa_rosado,2002,8434812
 vinho_mesa_branco,2002,37738385
-vinho__fino_de_mesa,2002,25438750
+vinho_fino_de_mesa,2002,25438750
 vinho_mesa_tinto,2002,12109658
 vinho_mesa_rosado,2002,650263
 vinho_mesa_branco,2002,12678829
@@ -1997,7 +1997,7 @@ vinho_especial,2002,270364
 vinho_especial_tinto,2002,258412
 vinho_especial_rosado,2002,0
 vinho_especial_branco,2002,11952
-espumantes_,2002,4267544
+espumantes,2002,4267544
 espumante_moscatel,2002,525996
 espumante,2002,3741548
 espumante_organico,2002,0
@@ -2049,7 +2049,7 @@ vinho_de_mesa,2003,217082959
 vinho_mesa_tinto,2003,179225328
 vinho_mesa_rosado,2003,6945806
 vinho_mesa_branco,2003,30911825
-vinho__fino_de_mesa,2003,23293171
+vinho_fino_de_mesa,2003,23293171
 vinho_mesa_tinto,2003,12559693
 vinho_mesa_rosado,2003,579724
 vinho_mesa_branco,2003,10153754
@@ -2059,7 +2059,7 @@ vinho_especial,2003,205269
 vinho_especial_tinto,2003,87544
 vinho_especial_rosado,2003,0
 vinho_especial_branco,2003,117725
-espumantes_,2003,4798284
+espumantes,2003,4798284
 espumante_moscatel,2003,594044
 espumante,2003,4204240
 espumante_organico,2003,0
@@ -2111,7 +2111,7 @@ vinho_de_mesa,2004,225021830
 vinho_mesa_tinto,2004,186236086
 vinho_mesa_rosado,2004,5478618
 vinho_mesa_branco,2004,33307126
-vinho__fino_de_mesa,2004,19884366
+vinho_fino_de_mesa,2004,19884366
 vinho_mesa_tinto,2004,10859722
 vinho_mesa_rosado,2004,390371
 vinho_mesa_branco,2004,8634273
@@ -2121,7 +2121,7 @@ vinho_especial,2004,66989
 vinho_especial_tinto,2004,51824
 vinho_especial_rosado,2004,0
 vinho_especial_branco,2004,15165
-espumantes_,2004,5485441
+espumantes,2004,5485441
 espumante_moscatel,2004,673332
 espumante,2004,4812109
 espumante_organico,2004,0
@@ -2173,7 +2173,7 @@ vinho_de_mesa,2005,271248493
 vinho_mesa_tinto,2005,227987458
 vinho_mesa_rosado,2005,3562059
 vinho_mesa_branco,2005,39698976
-vinho__fino_de_mesa,2005,22306004
+vinho_fino_de_mesa,2005,22306004
 vinho_mesa_tinto,2005,13335767
 vinho_mesa_rosado,2005,472971
 vinho_mesa_branco,2005,8497266
@@ -2183,7 +2183,7 @@ vinho_especial,2005,285994
 vinho_especial_tinto,2005,278339
 vinho_especial_rosado,2005,0
 vinho_especial_branco,2005,7655
-espumantes_,2005,6776672
+espumantes,2005,6776672
 espumante_moscatel,2005,1071448
 espumante,2005,5705224
 espumante_organico,2005,0
@@ -2235,7 +2235,7 @@ vinho_de_mesa,2006,245625614
 vinho_mesa_tinto,2006,209438207
 vinho_mesa_rosado,2006,3071382
 vinho_mesa_branco,2006,33116025
-vinho__fino_de_mesa,2006,22767358
+vinho_fino_de_mesa,2006,22767358
 vinho_mesa_tinto,2006,13920655
 vinho_mesa_rosado,2006,307189
 vinho_mesa_branco,2006,8539514
@@ -2245,7 +2245,7 @@ vinho_especial,2006,172176
 vinho_especial_tinto,2006,171361
 vinho_especial_rosado,2006,0
 vinho_especial_branco,2006,815
-espumantes_,2006,7728838
+espumantes,2006,7728838
 espumante_moscatel,2006,1320959
 espumante,2006,6407879
 espumante_organico,2006,0
@@ -2297,7 +2297,7 @@ vinho_de_mesa,2007,226710045
 vinho_mesa_tinto,2007,190526781
 vinho_mesa_rosado,2007,2252558
 vinho_mesa_branco,2007,29122090
-vinho__fino_de_mesa,2007,21485699
+vinho_fino_de_mesa,2007,21485699
 vinho_mesa_tinto,2007,13872339
 vinho_mesa_rosado,2007,416285
 vinho_mesa_branco,2007,7197075
@@ -2307,7 +2307,7 @@ vinho_especial,2007,106333
 vinho_especial_tinto,2007,106333
 vinho_especial_rosado,2007,0
 vinho_especial_branco,2007,0
-espumantes_,2007,8596406
+espumantes,2007,8596406
 espumante_moscatel,2007,1585203
 espumante,2007,7011203
 espumante_organico,2007,0
@@ -2359,7 +2359,7 @@ vinho_de_mesa,2008,200488612
 vinho_mesa_tinto,2008,172020779
 vinho_mesa_rosado,2008,1840779
 vinho_mesa_branco,2008,26627054
-vinho__fino_de_mesa,2008,23167738
+vinho_fino_de_mesa,2008,23167738
 vinho_mesa_tinto,2008,13920224
 vinho_mesa_rosado,2008,313513
 vinho_mesa_branco,2008,8934001
@@ -2369,7 +2369,7 @@ vinho_especial,2008,65
 vinho_especial_tinto,2008,65
 vinho_especial_rosado,2008,0
 vinho_especial_branco,2008,0
-espumantes_,2008,9539610
+espumantes,2008,9539610
 espumante_moscatel,2008,1905395
 espumante,2008,7634215
 espumante_organico,2008,0
@@ -2421,7 +2421,7 @@ vinho_de_mesa,2009,234525979
 vinho_mesa_tinto,2009,193004182
 vinho_mesa_rosado,2009,2307580
 vinho_mesa_branco,2009,39214217
-vinho__fino_de_mesa,2009,33080270
+vinho_fino_de_mesa,2009,33080270
 vinho_mesa_tinto,2009,19576295
 vinho_mesa_rosado,2009,213835
 vinho_mesa_branco,2009,13290140
@@ -2431,7 +2431,7 @@ vinho_especial,2009,113
 vinho_especial_tinto,2009,113
 vinho_especial_rosado,2009,0
 vinho_especial_branco,2009,0
-espumantes_,2009,11242890
+espumantes,2009,11242890
 espumante_moscatel,2009,2500230
 espumante,2009,8742660
 espumante_organico,2009,0
@@ -2483,7 +2483,7 @@ vinho_de_mesa,2010,221242945
 vinho_mesa_tinto,2010,188649074
 vinho_mesa_rosado,2010,2036928
 vinho_mesa_branco,2010,30556943
-vinho__fino_de_mesa,2010,21390159
+vinho_fino_de_mesa,2010,21390159
 vinho_mesa_tinto,2010,15184398
 vinho_mesa_rosado,2010,236802
 vinho_mesa_branco,2010,5968959
@@ -2493,7 +2493,7 @@ vinho_especial,2010,293
 vinho_especial_tinto,2010,293
 vinho_especial_rosado,2010,0
 vinho_especial_branco,2010,0
-espumantes_,2010,12647906
+espumantes,2010,12647906
 espumante_moscatel,2010,2946179
 espumante,2010,9701727
 espumante_organico,2010,0
@@ -2545,7 +2545,7 @@ vinho_de_mesa,2011,230310468
 vinho_mesa_tinto,2011,196562722
 vinho_mesa_rosado,2011,1668823
 vinho_mesa_branco,2011,32078923
-vinho__fino_de_mesa,2011,19967310
+vinho_fino_de_mesa,2011,19967310
 vinho_mesa_tinto,2011,14876896
 vinho_mesa_rosado,2011,211484
 vinho_mesa_branco,2011,4878930
@@ -2555,7 +2555,7 @@ vinho_especial,2011,699
 vinho_especial_tinto,2011,699
 vinho_especial_rosado,2011,0
 vinho_especial_branco,2011,0
-espumantes_,2011,13305275
+espumantes,2011,13305275
 espumante_moscatel,2011,2996441
 espumante,2011,10308834
 espumante_organico,2011,0
@@ -2607,7 +2607,7 @@ vinho_de_mesa,2012,206969571
 vinho_mesa_tinto,2012,173964776
 vinho_mesa_rosado,2012,1738134
 vinho_mesa_branco,2012,31266661
-vinho__fino_de_mesa,2012,22469950
+vinho_fino_de_mesa,2012,22469950
 vinho_mesa_tinto,2012,15443016
 vinho_mesa_rosado,2012,150806
 vinho_mesa_branco,2012,6876128
@@ -2617,7 +2617,7 @@ vinho_especial,2012,239
 vinho_especial_tinto,2012,239
 vinho_especial_rosado,2012,0
 vinho_especial_branco,2012,0
-espumantes_,2012,14889147
+espumantes,2012,14889147
 espumante_moscatel,2012,3610289
 espumante,2012,11278858
 espumante_organico,2012,0
@@ -2669,7 +2669,7 @@ vinho_de_mesa,2013,221590810
 vinho_mesa_tinto,2013,188033494
 vinho_mesa_rosado,2013,1777648
 vinho_mesa_branco,2013,31779668
-vinho__fino_de_mesa,2013,27912934
+vinho_fino_de_mesa,2013,27912934
 vinho_mesa_tinto,2013,19121750
 vinho_mesa_rosado,2013,214269
 vinho_mesa_branco,2013,8576915
@@ -2679,7 +2679,7 @@ vinho_especial,2013,2257
 vinho_especial_tinto,2013,2257
 vinho_especial_rosado,2013,0
 vinho_especial_branco,2013,0
-espumantes_,2013,15978504
+espumantes,2013,15978504
 espumante_moscatel,2013,3783531
 espumante,2013,12194973
 espumante_organico,2013,0
@@ -2731,7 +2731,7 @@ vinho_de_mesa,2014,206404427
 vinho_mesa_tinto,2014,178250072
 vinho_mesa_rosado,2014,1419855
 vinho_mesa_branco,2014,26734500
-vinho__fino_de_mesa,2014,20424983
+vinho_fino_de_mesa,2014,20424983
 vinho_mesa_tinto,2014,15354938
 vinho_mesa_rosado,2014,164219
 vinho_mesa_branco,2014,4905826
@@ -2741,7 +2741,7 @@ vinho_especial,2014,7231
 vinho_especial_tinto,2014,7231
 vinho_especial_rosado,2014,0
 vinho_especial_branco,2014,0
-espumantes_,2014,17191075
+espumantes,2014,17191075
 espumante_moscatel,2014,4588465
 espumante,2014,12602610
 espumante_organico,2014,0
@@ -2793,7 +2793,7 @@ vinho_de_mesa,2015,209198468
 vinho_mesa_tinto,2015,182028785
 vinho_mesa_rosado,2015,1409002
 vinho_mesa_branco,2015,25760681
-vinho__fino_de_mesa,2015,20141631
+vinho_fino_de_mesa,2015,20141631
 vinho_mesa_tinto,2015,15572632
 vinho_mesa_rosado,2015,169185
 vinho_mesa_branco,2015,4399814
@@ -2803,7 +2803,7 @@ vinho_especial,2015,593
 vinho_especial_tinto,2015,593
 vinho_especial_rosado,2015,0
 vinho_especial_branco,2015,0
-espumantes_,2015,18897144
+espumantes,2015,18897144
 espumante_moscatel,2015,5010704
 espumante,2015,13886440
 espumante_organico,2015,0
@@ -2855,7 +2855,7 @@ vinho_de_mesa,2016,166769622
 vinho_mesa_tinto,2016,146646365
 vinho_mesa_rosado,2016,1391942
 vinho_mesa_branco,2016,18731315
-vinho__fino_de_mesa,2016,19630158
+vinho_fino_de_mesa,2016,19630158
 vinho_mesa_tinto,2016,15228514
 vinho_mesa_rosado,2016,172351
 vinho_mesa_branco,2016,4229293
@@ -2865,7 +2865,7 @@ vinho_especial,2016,331
 vinho_especial_tinto,2016,331
 vinho_especial_rosado,2016,0
 vinho_especial_branco,2016,0
-espumantes_,2016,16945710
+espumantes,2016,16945710
 espumante_moscatel,2016,4507467
 espumante,2016,12438243
 espumante_organico,2016,0
@@ -2917,7 +2917,7 @@ vinho_de_mesa,2017,176059959
 vinho_mesa_tinto,2017,154309442
 vinho_mesa_rosado,2017,1097426
 vinho_mesa_branco,2017,20653091
-vinho__fino_de_mesa,2017,15874354
+vinho_fino_de_mesa,2017,15874354
 vinho_mesa_tinto,2017,12021684
 vinho_mesa_rosado,2017,182080
 vinho_mesa_branco,2017,3670590
@@ -2927,7 +2927,7 @@ vinho_especial,2017,0
 vinho_especial_tinto,2017,0
 vinho_especial_rosado,2017,0
 vinho_especial_branco,2017,0
-espumantes_,2017,17583283
+espumantes,2017,17583283
 espumante_moscatel,2017,5561181
 espumante,2017,12022102
 espumante_organico,2017,0
@@ -2979,7 +2979,7 @@ vinho_de_mesa,2018,177186273
 vinho_mesa_tinto,2018,155115499
 vinho_mesa_rosado,2018,1972944
 vinho_mesa_branco,2018,20097830
-vinho__fino_de_mesa,2018,14826143
+vinho_fino_de_mesa,2018,14826143
 vinho_mesa_tinto,2018,11150517
 vinho_mesa_rosado,2018,262430
 vinho_mesa_branco,2018,3413196
@@ -2989,7 +2989,7 @@ vinho_especial,2018,0
 vinho_especial_tinto,2018,0
 vinho_especial_rosado,2018,0
 vinho_especial_branco,2018,0
-espumantes_,2018,18218375
+espumantes,2018,18218375
 espumante_moscatel,2018,6526075
 espumante,2018,11692300
 espumante_organico,2018,0
@@ -3041,7 +3041,7 @@ vinho_de_mesa,2019,180446489
 vinho_mesa_tinto,2019,158519218
 vinho_mesa_rosado,2019,1265435
 vinho_mesa_branco,2019,20661836
-vinho__fino_de_mesa,2019,15684588
+vinho_fino_de_mesa,2019,15684588
 vinho_mesa_tinto,2019,11433702
 vinho_mesa_rosado,2019,503524
 vinho_mesa_branco,2019,3747362
@@ -3051,7 +3051,7 @@ vinho_especial,2019,0
 vinho_especial_tinto,2019,0
 vinho_especial_rosado,2019,0
 vinho_especial_branco,2019,0
-espumantes_,2019,22759859
+espumantes,2019,22759859
 espumante_moscatel,2019,8997187
 espumante,2019,13762361
 espumante_organico,2019,311
@@ -3103,7 +3103,7 @@ vinho_de_mesa,2020,215557931
 vinho_mesa_tinto,2020,189573423
 vinho_mesa_rosado,2020,1394901
 vinho_mesa_branco,2020,24589607
-vinho__fino_de_mesa,2020,24310834
+vinho_fino_de_mesa,2020,24310834
 vinho_mesa_tinto,2020,18202453
 vinho_mesa_rosado,2020,993248
 vinho_mesa_branco,2020,5115133
@@ -3113,7 +3113,7 @@ vinho_especial,2020,0
 vinho_especial_tinto,2020,0
 vinho_especial_rosado,2020,0
 vinho_especial_branco,2020,0
-espumantes_,2020,22610762
+espumantes,2020,22610762
 espumante_moscatel,2020,9298571
 espumante,2020,13311450
 espumante_organico,2020,742
@@ -3165,7 +3165,7 @@ vinho_de_mesa,2021,210012238
 vinho_mesa_tinto,2021,185653678
 vinho_mesa_rosado,2021,1931606
 vinho_mesa_branco,2021,22426954
-vinho__fino_de_mesa,2021,27080445
+vinho_fino_de_mesa,2021,27080445
 vinho_mesa_tinto,2021,19337862
 vinho_mesa_rosado,2021,1603537
 vinho_mesa_branco,2021,6139046
@@ -3175,7 +3175,7 @@ vinho_especial,2021,0
 vinho_especial_tinto,2021,0
 vinho_especial_rosado,2021,0
 vinho_especial_branco,2021,0
-espumantes_,2021,31242697
+espumantes,2021,31242697
 espumante_moscatel,2021,12240059
 espumante,2021,19001999
 espumante_organico,2021,639
@@ -3227,7 +3227,7 @@ vinho_de_mesa,2022,187939996
 vinho_mesa_tinto,2022,165067340
 vinho_mesa_rosado,2022,2213723
 vinho_mesa_branco,2022,20658933
-vinho__fino_de_mesa,2022,21533487
+vinho_fino_de_mesa,2022,21533487
 vinho_mesa_tinto,2022,15258778
 vinho_mesa_rosado,2022,1318396
 vinho_mesa_branco,2022,4956314
@@ -3237,7 +3237,7 @@ vinho_especial,2022,0
 vinho_especial_tinto,2022,0
 vinho_especial_rosado,2022,0
 vinho_especial_branco,2022,0
-espumantes_,2022,29525942
+espumantes,2022,29525942
 espumante_moscatel,2022,12204315
 espumante,2022,17321031
 espumante_organico,2022,597
@@ -3289,7 +3289,7 @@ vinho_de_mesa,2023,187016848
 vinho_mesa_tinto,2023,165097539
 vinho_mesa_rosado,2023,2520748
 vinho_mesa_branco,2023,19398561
-vinho__fino_de_mesa,2023,18589310
+vinho_fino_de_mesa,2023,18589310
 vinho_mesa_tinto,2023,12450606
 vinho_mesa_rosado,2023,1214583
 vinho_mesa_branco,2023,4924121
@@ -3299,7 +3299,7 @@ vinho_especial,2023,0
 vinho_especial_tinto,2023,0
 vinho_especial_rosado,2023,0
 vinho_especial_branco,2023,0
-espumantes_,2023,29381635
+espumantes,2023,29381635
 espumante_moscatel,2023,9771698
 espumante,2023,19609379
 espumante_organico,2023,558

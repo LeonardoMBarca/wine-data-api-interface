@@ -11,7 +11,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     filemode='w',
     force=True
-)
+) 
 
 from scripts.process_prod import main as process_prod
 from scripts.process_com import main as process_com

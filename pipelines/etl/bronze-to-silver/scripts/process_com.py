@@ -42,9 +42,11 @@ def process_csv(path):
         "de_": "derivados_",
         '\"': "",
         "-": "_",
-        " ": "_",
         "\(": "", 
-        "\)": ""
+        "\)": "",
+        "  ": "_",
+        " ": "_",
+        "__": "_"
     }
 
     df = standardize_dataframe(df, standardize_dict)

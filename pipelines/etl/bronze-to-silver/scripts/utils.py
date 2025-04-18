@@ -17,6 +17,7 @@ def standardize_dataframe(df, standardize_dict):
     df = df.apply(lambda x: x.astype(str).str.lower())
     df.columns = map(str.lower, df.columns)
     df = df.replace(to_replace=standardize_dict, regex=True)
+    df = df.apply(lambda x: x.astype(str).str.strip("_"))
 
     return df
 

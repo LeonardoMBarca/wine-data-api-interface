@@ -51,7 +51,9 @@ def process_csv(path):
         'ó':'o',
         'ú':'u',
         'ã':'a',
-        'õ':'o'
+        'õ':'o',
+        "\(": "", 
+        "\)": ""
     }
 
     df = standardize_dataframe(df, standardize_dict)
