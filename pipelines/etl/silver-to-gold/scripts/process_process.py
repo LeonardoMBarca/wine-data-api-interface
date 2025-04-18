@@ -56,7 +56,7 @@ def dimensional_modeling_csv(path):
             }
 
             if tokens and tokens[0] in ["tintas", "brancas", "rosadas", "outros"]:
-                if "brancas_rosadas" in tokens[0]:
+                if "brancas" in tokens and "rosadas" in tokens:
                     attr["categoria"] = "brancas_rosadas"
                 else:
                     attr["categoria"] = tokens[0]
