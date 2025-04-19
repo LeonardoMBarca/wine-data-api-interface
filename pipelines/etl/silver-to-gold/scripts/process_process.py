@@ -56,9 +56,16 @@ def dimensional_modeling_csv(path):
             }
 
             if tokens and tokens[0] in ["tintas", "brancas", "rosadas", "outros"]:
-                attr["categoria"] = "brancas_rosadas" if "brancas" in original_value and "rosadas" in original_value else tokens[0]
+                if "brancas_rosadas" in tokens[0]:
+                    attr["categoria"] = "brancas_rosadas"
+                else:
+                    attr["categoria"] = tokens[0]
 
-                attr["total"] = 1 if original_value in total_values else 0
+                if original_value in total_values:
+                    attr["total"] = 1
+
+                else:
+                    attr["total"] = 0
 
 
 
