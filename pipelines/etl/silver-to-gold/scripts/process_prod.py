@@ -58,75 +58,71 @@ def dimensional_modeling_csv(path):
             if tokens and tokens[0] in ["vinho", "suco", "derivados"]:
                 attr["categoria"] = tokens[0]
 
-                if original_value in total_values:
-                    attr["total"] = 1
-                    
-                else:
-                    attr["total"] = 0
-                    # SECTION: VINHO
-                    if attr["categoria"] == "vinho":
-                        if "mesa" in tokens:
-                            attr["subcategoria"] = "mesa"
+                attr["total"] = 1 if original_value in total_values else 0
+                # SECTION: VINHO
+                if attr["categoria"] == "vinho":
+                    if "mesa" in tokens:
+                        attr["subcategoria"] = "mesa"
 
-                        for estilo in ["tinto", "branco", "rosado"]:
-                            if estilo in tokens:
-                                attr["tipo_estilo"] = estilo
-                                break
+                    for estilo in ["tinto", "branco", "rosado"]:
+                        if estilo in tokens:
+                            attr["tipo_estilo"] = estilo
+                            break
 
-                        if "fino" in tokens:
-                            attr["processamento"] = "fino"
+                    if "fino" in tokens:
+                        attr["processamento"] = "fino"
 
-                        for var in ["vinifera", "viniferas"]:
-                            if var in tokens:
-                                attr["variedade_origem"] = var
-                                break
+                    for var in ["vinifera", "viniferas"]:
+                        if var in tokens:
+                            attr["variedade_origem"] = var
+                            break
 
-                    # SECTION: SUCO
-                    elif attr["categoria"] == "suco":
-                        if "uva" in tokens:
-                            attr["variedade_origem"] = "uva"
+                # SECTION: SUCO
+                elif attr["categoria"] == "suco":
+                    if "uva" in tokens:
+                        attr["variedade_origem"] = "uva"
 
-                        if "concentrado" in tokens:
-                            attr["tipo_estilo"] = "concentrado"
+                    if "concentrado" in tokens:
+                        attr["tipo_estilo"] = "concentrado"
 
-                        for proc in ["simples", "adocado", "organico", "reconstituido"]:
+                    for proc in ["simples", "adocado", "organico", "reconstituido"]:
+                        if proc in tokens:
+                            attr["processamento"] = proc
+                            break
+
+                # SECTION: DERIVADOS
+                elif attr["categoria"] == "derivados":
+                    subcat_list = [
+                        "espumante", "base", "bebida", "polpa", "mosto", "mistelas", "nectar",
+                        "licorosos", "compostos", "jeropiga", "filtrado", "frisante", "vinho",
+                        "brandy", "destilado", "bagaceira", "licor", "vinagre", "borra", "pisco", "outros"
+                    ]
+
+                    for token in tokens:
+                        if token in subcat_list:
+                            attr["subcategoria"] = token
+                            break
+
+                    if "champenoise" in tokens:
+                        attr["metodo_processo"] = "champenoise"
+
+                    elif "charmat" in tokens:
+
+                        attr["metodo_processo"] = "charmat"
+
+                    for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acidificado", "composto", "organico"]:
+                        if estilo in tokens:
+                            attr["tipo_estilo"] = estilo
+                            break
+
+                    if "parcialmente" in tokens and "fermentado" in tokens:
+                        attr["processamento"] = "parcialmente fermentado"
+
+                    else:
+                        for proc in ["simples", "concentrado", "dessulfitado"]:
                             if proc in tokens:
                                 attr["processamento"] = proc
                                 break
-
-                    # SECTION: DERIVADOS
-                    elif attr["categoria"] == "derivados":
-                        subcat_list = [
-                            "espumante", "base", "bebida", "polpa", "mosto", "mistelas", "nectar",
-                            "licorosos", "compostos", "jeropiga", "filtrado", "frisante", "vinho",
-                            "brandy", "destilado", "bagaceira", "licor", "vinagre", "borra", "pisco", "outros"
-                        ]
-
-                        for token in tokens:
-                            if token in subcat_list:
-                                attr["subcategoria"] = token
-                                break
-
-                        if "champenoise" in tokens:
-                            attr["metodo_processo"] = "champenoise"
-
-                        elif "charmat" in tokens:
-
-                            attr["metodo_processo"] = "charmat"
-
-                        for estilo in ["tinto", "branco", "rosado", "leve", "licoroso", "acidificado", "composto", "organico"]:
-                            if estilo in tokens:
-                                attr["tipo_estilo"] = estilo
-                                break
-
-                        if "parcialmente" in tokens and "fermentado" in tokens:
-                            attr["processamento"] = "parcialmente fermentado"
-
-                        else:
-                            for proc in ["simples", "concentrado", "dessulfitado"]:
-                                if proc in tokens:
-                                    attr["processamento"] = proc
-                                    break
 
             attr_mapping[original_value] = attr
 

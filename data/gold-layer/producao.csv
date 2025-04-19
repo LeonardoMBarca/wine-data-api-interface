@@ -1,9 +1,9 @@
 control,ano,Litros,categoria,subcategoria,tipo_estilo,processamento,variedade_origem,metodo_processo,total
-vinho_de_mesa,1970,217208604,vinho,,,,,,1
+vinho_de_mesa,1970,217208604,vinho,mesa,,,,,1
 vinho_mesa_tinto,1970,174224052,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1970,748400,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1970,42236152,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1970,23899346,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1970,23899346,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1970,7591557,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1970,15562889,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1970,744900,vinho,,rosado,,viniferas,,0
@@ -50,11 +50,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1970,0,derivados,destilado,,s
 derivados_vinho_acidificado,1970,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1970,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1970,0,derivados,outros,,,,,0
-vinho_de_mesa,1971,154264651,vinho,,,,,,1
+vinho_de_mesa,1971,154264651,vinho,mesa,,,,,1
 vinho_mesa_tinto,1971,121133369,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1971,1160500,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1971,31970782,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1971,23586062,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1971,23586062,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1971,7265666,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1971,15655709,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1971,664687,vinho,,rosado,,viniferas,,0
@@ -101,11 +101,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1971,0,derivados,destilado,,s
 derivados_vinho_acidificado,1971,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1971,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1971,0,derivados,outros,,,,,0
-vinho_de_mesa,1972,146953297,vinho,,,,,,1
+vinho_de_mesa,1972,146953297,vinho,mesa,,,,,1
 vinho_mesa_tinto,1972,118180926,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1972,1812367,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1972,26960004,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1972,21078771,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1972,21078771,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1972,6782837,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1972,13289304,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1972,1006630,vinho,,rosado,,viniferas,,0
@@ -152,11 +152,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1972,0,derivados,destilado,,s
 derivados_vinho_acidificado,1972,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1972,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1972,0,derivados,outros,,,,,0
-vinho_de_mesa,1973,116710345,vinho,,,,,,1
+vinho_de_mesa,1973,116710345,vinho,mesa,,,,,1
 vinho_mesa_tinto,1973,88589019,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1973,243900,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1973,27877426,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1973,12368410,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1973,12368410,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1973,3419625,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1973,7930070,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1973,1018715,vinho,,rosado,,viniferas,,0
@@ -203,11 +203,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1973,0,derivados,destilado,,s
 derivados_vinho_acidificado,1973,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1973,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1973,0,derivados,outros,,,,,0
-vinho_de_mesa,1974,193875345,vinho,,,,,,1
+vinho_de_mesa,1974,193875345,vinho,mesa,,,,,1
 vinho_mesa_tinto,1974,146544484,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1974,4138768,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1974,43192093,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1974,31644124,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1974,31644124,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1974,10047658,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1974,18927471,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1974,2668995,vinho,,rosado,,viniferas,,0
@@ -254,11 +254,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1974,0,derivados,destilado,,s
 derivados_vinho_acidificado,1974,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1974,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1974,0,derivados,outros,,,,,0
-vinho_de_mesa,1975,177401209,vinho,,,,,,1
+vinho_de_mesa,1975,177401209,vinho,mesa,,,,,1
 vinho_mesa_tinto,1975,144274134,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1975,1441507,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1975,31685568,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1975,39424590,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1975,39424590,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1975,14731106,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1975,21933695,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1975,2759789,vinho,,rosado,,viniferas,,0
@@ -305,11 +305,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1975,0,derivados,destilado,,s
 derivados_vinho_acidificado,1975,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1975,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1975,0,derivados,outros,,,,,0
-vinho_de_mesa,1976,144565438,vinho,,,,,,1
+vinho_de_mesa,1976,144565438,vinho,mesa,,,,,1
 vinho_mesa_tinto,1976,118360170,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1976,1871473,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1976,24333795,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1976,34500590,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1976,34500590,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1976,12405154,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1976,19874659,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1976,2220777,vinho,,rosado,,viniferas,,0
@@ -356,11 +356,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1976,0,derivados,destilado,,s
 derivados_vinho_acidificado,1976,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1976,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1976,0,derivados,outros,,,,,0
-vinho_de_mesa,1977,195359778,vinho,,,,,,1
+vinho_de_mesa,1977,195359778,vinho,mesa,,,,,1
 vinho_mesa_tinto,1977,154801826,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1977,4954387,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1977,35603565,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1977,41264971,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1977,41264971,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1977,16131758,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1977,20409231,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1977,4723982,vinho,,rosado,,viniferas,,0
@@ -407,11 +407,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1977,0,derivados,destilado,,s
 derivados_vinho_acidificado,1977,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1977,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1977,0,derivados,outros,,,,,0
-vinho_de_mesa,1978,200053669,vinho,,,,,,1
+vinho_de_mesa,1978,200053669,vinho,mesa,,,,,1
 vinho_mesa_tinto,1978,162917363,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1978,5079748,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1978,32056558,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1978,36750933,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1978,36750933,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1978,15000671,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1978,17640081,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1978,4110181,vinho,,rosado,,viniferas,,0
@@ -458,11 +458,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1978,0,derivados,destilado,,s
 derivados_vinho_acidificado,1978,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1978,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1978,0,derivados,outros,,,,,0
-vinho_de_mesa,1979,211252982,vinho,,,,,,1
+vinho_de_mesa,1979,211252982,vinho,mesa,,,,,1
 vinho_mesa_tinto,1979,154736439,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1979,7146395,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1979,49370148,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1979,46129710,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1979,46129710,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1979,14356453,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1979,25727132,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1979,6046125,vinho,,rosado,,viniferas,,0
@@ -509,11 +509,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1979,0,derivados,destilado,,s
 derivados_vinho_acidificado,1979,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1979,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1979,0,derivados,outros,,,,,0
-vinho_de_mesa,1980,130308185,vinho,,,,,,1
+vinho_de_mesa,1980,130308185,vinho,mesa,,,,,1
 vinho_mesa_tinto,1980,101659755,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1980,5363452,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1980,23284978,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1980,31740663,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1980,31740663,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1980,9296741,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1980,19326572,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1980,3117350,vinho,,rosado,,viniferas,,0
@@ -560,11 +560,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1980,0,derivados,destilado,,s
 derivados_vinho_acidificado,1980,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1980,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1980,0,derivados,outros,,,,,0
-vinho_de_mesa,1981,186129728,vinho,,,,,,1
+vinho_de_mesa,1981,186129728,vinho,mesa,,,,,1
 vinho_mesa_tinto,1981,134156175,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1981,12547739,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1981,39425814,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1981,49348047,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1981,49348047,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1981,16036963,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1981,27528276,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1981,5782808,vinho,,rosado,,viniferas,,0
@@ -611,11 +611,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1981,0,derivados,destilado,,s
 derivados_vinho_acidificado,1981,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1981,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1981,0,derivados,outros,,,,,0
-vinho_de_mesa,1982,234754564,vinho,,,,,,1
+vinho_de_mesa,1982,234754564,vinho,mesa,,,,,1
 vinho_mesa_tinto,1982,183349460,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1982,15782499,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1982,35622605,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1982,57453581,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1982,57453581,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1982,19987588,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1982,34423412,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1982,3042581,vinho,,rosado,,viniferas,,0
@@ -662,11 +662,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1982,0,derivados,destilado,,s
 derivados_vinho_acidificado,1982,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1982,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1982,0,derivados,outros,,,,,0
-vinho_de_mesa,1983,120261544,vinho,,,,,,1
+vinho_de_mesa,1983,120261544,vinho,mesa,,,,,1
 vinho_mesa_tinto,1983,87080528,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1983,12191896,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1983,20989120,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1983,40616812,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1983,40616812,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1983,14340514,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1983,24164361,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1983,2111937,vinho,,rosado,,viniferas,,0
@@ -713,11 +713,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1983,0,derivados,destilado,,s
 derivados_vinho_acidificado,1983,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1983,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1983,0,derivados,outros,,,,,0
-vinho_de_mesa,1984,177680331,vinho,,,,,,1
+vinho_de_mesa,1984,177680331,vinho,mesa,,,,,1
 vinho_mesa_tinto,1984,119615028,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1984,19502230,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1984,38563073,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1984,48289279,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1984,48289279,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1984,15777602,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1984,30395959,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1984,2115718,vinho,,rosado,,viniferas,,0
@@ -764,11 +764,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1984,0,derivados,destilado,,s
 derivados_vinho_acidificado,1984,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1984,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1984,0,derivados,outros,,,,,0
-vinho_de_mesa,1985,275338955,vinho,,,,,,1
+vinho_de_mesa,1985,275338955,vinho,mesa,,,,,1
 vinho_mesa_tinto,1985,216732390,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1985,23010666,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1985,35595899,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1985,67035393,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1985,67035393,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1985,19347979,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1985,44679484,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1985,3007930,vinho,,rosado,,viniferas,,0
@@ -815,11 +815,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1985,0,derivados,destilado,,s
 derivados_vinho_acidificado,1985,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1985,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1985,0,derivados,outros,,,,,0
-vinho_de_mesa,1986,157711522,vinho,,,,,,1
+vinho_de_mesa,1986,157711522,vinho,mesa,,,,,1
 vinho_mesa_tinto,1986,118766694,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1986,16872183,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1986,22072645,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1986,48559180,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1986,48559180,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1986,12282967,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1986,34794145,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1986,1482068,vinho,,rosado,,viniferas,,0
@@ -866,11 +866,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1986,0,derivados,destilado,,s
 derivados_vinho_acidificado,1986,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1986,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1986,0,derivados,outros,,,,,0
-vinho_de_mesa,1987,150467184,vinho,,,,,,1
+vinho_de_mesa,1987,150467184,vinho,mesa,,,,,1
 vinho_mesa_tinto,1987,97841160,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1987,27497857,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1987,25128167,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1987,47301266,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1987,47301266,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1987,10920073,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1987,35432544,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1987,948649,vinho,,rosado,,viniferas,,0
@@ -917,11 +917,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1987,0,derivados,destilado,,s
 derivados_vinho_acidificado,1987,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1987,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1987,0,derivados,outros,,,,,0
-vinho_de_mesa,1988,244791058,vinho,,,,,,1
+vinho_de_mesa,1988,244791058,vinho,mesa,,,,,1
 vinho_mesa_tinto,1988,173747942,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1988,32660045,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1988,38383071,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1988,76560765,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1988,76560765,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1988,18690518,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1988,56441847,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1988,1428400,vinho,,rosado,,viniferas,,0
@@ -968,11 +968,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1988,0,derivados,destilado,,s
 derivados_vinho_acidificado,1988,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1988,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1988,0,derivados,outros,,,,,0
-vinho_de_mesa,1989,181801961,vinho,,,,,,1
+vinho_de_mesa,1989,181801961,vinho,mesa,,,,,1
 vinho_mesa_tinto,1989,136931173,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1989,24603265,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1989,20267523,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1989,72772144,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1989,72772144,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1989,16140751,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1989,54983093,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1989,1648300,vinho,,rosado,,viniferas,,0
@@ -1019,11 +1019,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1989,0,derivados,destilado,,s
 derivados_vinho_acidificado,1989,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1989,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1989,0,derivados,outros,,,,,0
-vinho_de_mesa,1990,210548199,vinho,,,,,,1
+vinho_de_mesa,1990,210548199,vinho,mesa,,,,,1
 vinho_mesa_tinto,1990,154359897,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1990,33512030,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1990,22676272,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1990,73689124,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1990,73689124,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1990,17750504,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1990,52080420,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1990,3858200,vinho,,rosado,,viniferas,,0
@@ -1070,11 +1070,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1990,0,derivados,destilado,,s
 derivados_vinho_acidificado,1990,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1990,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1990,0,derivados,outros,,,,,0
-vinho_de_mesa,1991,126768254,vinho,,,,,,1
+vinho_de_mesa,1991,126768254,vinho,mesa,,,,,1
 vinho_mesa_tinto,1991,90320836,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1991,25046588,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1991,11400830,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1991,45519167,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1991,45519167,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1991,12001895,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1991,33307472,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1991,209800,vinho,,rosado,,viniferas,,0
@@ -1121,11 +1121,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1991,0,derivados,destilado,,s
 derivados_vinho_acidificado,1991,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1991,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1991,0,derivados,outros,,,,,0
-vinho_de_mesa,1992,163248419,vinho,,,,,,1
+vinho_de_mesa,1992,163248419,vinho,mesa,,,,,1
 vinho_mesa_tinto,1992,118638894,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1992,25446255,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1992,19163270,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1992,52612778,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1992,52612778,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1992,13449911,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1992,38856367,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1992,306500,vinho,,rosado,,viniferas,,0
@@ -1172,11 +1172,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1992,0,derivados,destilado,,s
 derivados_vinho_acidificado,1992,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1992,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1992,0,derivados,outros,,,,,0
-vinho_de_mesa,1993,171754995,vinho,,,,,,1
+vinho_de_mesa,1993,171754995,vinho,mesa,,,,,1
 vinho_mesa_tinto,1993,125172218,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1993,31986075,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1993,14596702,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1993,53054225,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1993,53054225,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1993,12119485,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1993,40415898,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1993,518842,vinho,,rosado,,viniferas,,0
@@ -1223,11 +1223,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1993,0,derivados,destilado,,s
 derivados_vinho_acidificado,1993,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1993,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1993,0,derivados,outros,,,,,0
-vinho_de_mesa,1994,202073263,vinho,,,,,,1
+vinho_de_mesa,1994,202073263,vinho,mesa,,,,,1
 vinho_mesa_tinto,1994,161479717,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1994,28291853,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1994,12301693,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1994,58733741,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1994,58733741,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1994,15646861,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1994,42419680,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1994,667200,vinho,,rosado,,viniferas,,0
@@ -1274,11 +1274,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1994,0,derivados,destilado,,s
 derivados_vinho_acidificado,1994,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1994,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1994,0,derivados,outros,,,,,0
-vinho_de_mesa,1995,214788304,vinho,,,,,,1
+vinho_de_mesa,1995,214788304,vinho,mesa,,,,,1
 vinho_mesa_tinto,1995,167174017,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1995,15472732,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1995,32141555,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1995,47126229,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1995,47126229,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1995,11924291,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1995,34209738,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1995,992200,vinho,,rosado,,viniferas,,0
@@ -1325,11 +1325,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1995,0,derivados,destilado,,s
 derivados_vinho_acidificado,1995,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1995,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1995,0,derivados,outros,,,,,0
-vinho_de_mesa,1996,152917771,vinho,,,,,,1
+vinho_de_mesa,1996,152917771,vinho,mesa,,,,,1
 vinho_mesa_tinto,1996,115896909,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1996,24073622,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1996,12947240,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1996,45325058,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1996,45325058,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1996,12819866,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1996,31893892,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1996,611300,vinho,,rosado,,viniferas,,0
@@ -1376,11 +1376,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1996,0,derivados,destilado,,s
 derivados_vinho_acidificado,1996,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1996,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1996,0,derivados,outros,,,,,0
-vinho_de_mesa,1997,182816047,vinho,,,,,,1
+vinho_de_mesa,1997,182816047,vinho,mesa,,,,,1
 vinho_mesa_tinto,1997,116458841,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1997,41842945,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1997,24514261,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1997,46988414,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1997,46988414,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1997,12590647,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1997,33792167,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1997,605600,vinho,,rosado,,viniferas,,0
@@ -1427,11 +1427,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1997,0,derivados,destilado,,s
 derivados_vinho_acidificado,1997,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1997,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1997,0,derivados,outros,,,,,0
-vinho_de_mesa,1998,150814943,vinho,,,,,,1
+vinho_de_mesa,1998,150814943,vinho,mesa,,,,,1
 vinho_mesa_tinto,1998,102127865,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1998,32140249,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1998,16546829,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1998,33898630,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1998,33898630,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1998,8716140,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1998,24384090,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1998,798400,vinho,,rosado,,viniferas,,0
@@ -1478,11 +1478,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1998,0,derivados,destilado,,s
 derivados_vinho_acidificado,1998,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1998,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1998,0,derivados,outros,,,,,0
-vinho_de_mesa,1999,226520776,vinho,,,,,,1
+vinho_de_mesa,1999,226520776,vinho,mesa,,,,,1
 vinho_mesa_tinto,1999,168149414,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,1999,42528150,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,1999,15843212,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,1999,45830497,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,1999,45830497,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,1999,14640657,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,1999,30674840,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,1999,515000,vinho,,rosado,,viniferas,,0
@@ -1529,11 +1529,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,1999,0,derivados,destilado,,s
 derivados_vinho_acidificado,1999,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,1999,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,1999,0,derivados,outros,,,,,0
-vinho_de_mesa,2000,273025576,vinho,,,,,,1
+vinho_de_mesa,2000,273025576,vinho,mesa,,,,,1
 vinho_mesa_tinto,2000,208242670,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2000,44902276,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2000,19880630,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2000,56209739,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2000,56209739,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2000,18545613,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2000,36955126,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2000,709000,vinho,,rosado,,viniferas,,0
@@ -1580,11 +1580,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2000,0,derivados,destilado,,s
 derivados_vinho_acidificado,2000,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2000,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2000,0,derivados,outros,,,,,0
-vinho_de_mesa,2001,228932458,vinho,,,,,,1
+vinho_de_mesa,2001,228932458,vinho,mesa,,,,,1
 vinho_mesa_tinto,2001,175267437,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2001,44322836,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2001,9342185,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2001,34159277,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2001,34159277,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2001,13587683,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2001,20393594,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2001,178000,vinho,,rosado,,viniferas,,0
@@ -1631,11 +1631,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2001,0,derivados,destilado,,s
 derivados_vinho_acidificado,2001,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2001,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2001,0,derivados,outros,,,,,0
-vinho_de_mesa,2002,259589740,vinho,,,,,,1
+vinho_de_mesa,2002,259589740,vinho,mesa,,,,,1
 vinho_mesa_tinto,2002,215892333,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2002,35329657,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2002,8367750,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2002,31655226,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2002,31655226,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2002,13619033,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2002,17911689,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2002,124504,vinho,,rosado,,viniferas,,0
@@ -1682,11 +1682,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2002,0,derivados,destilado,,s
 derivados_vinho_acidificado,2002,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2002,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2002,0,derivados,outros,,,,,0
-vinho_de_mesa,2003,202545724,vinho,,,,,,1
+vinho_de_mesa,2003,202545724,vinho,mesa,,,,,1
 vinho_mesa_tinto,2003,155513687,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2003,40861639,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2003,6170398,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2003,29551457,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2003,29551457,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2003,15357576,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2003,14058481,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2003,135400,vinho,,rosado,,viniferas,,0
@@ -1733,11 +1733,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2003,0,derivados,destilado,,s
 derivados_vinho_acidificado,2003,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2003,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2003,0,derivados,outros,,,,,0
-vinho_de_mesa,2004,313962284,vinho,,,,,,1
+vinho_de_mesa,2004,313962284,vinho,mesa,,,,,1
 vinho_mesa_tinto,2004,254172425,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2004,51719967,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2004,8069892,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2004,42902608,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2004,42902608,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2004,23062182,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2004,19803647,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2004,36779,vinho,,rosado,,viniferas,,0
@@ -1784,11 +1784,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2004,0,derivados,destilado,,s
 derivados_vinho_acidificado,2004,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2004,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2004,0,derivados,outros,,,,,0
-vinho_de_mesa,2005,226080432,vinho,,,,,,1
+vinho_de_mesa,2005,226080432,vinho,mesa,,,,,1
 vinho_mesa_tinto,2005,180698666,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2005,39212146,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2005,6169620,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2005,45453898,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2005,45453898,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2005,25409805,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2005,20012363,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2005,31730,vinho,,rosado,,viniferas,,0
@@ -1835,11 +1835,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2005,0,derivados,destilado,,s
 derivados_vinho_acidificado,2005,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2005,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2005,0,derivados,outros,,,,,0
-vinho_de_mesa,2006,185100887,vinho,,,,,,1
+vinho_de_mesa,2006,185100887,vinho,mesa,,,,,1
 vinho_mesa_tinto,2006,149552555,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2006,31738390,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2006,3809942,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2006,32168977,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2006,32168977,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2006,18868108,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2006,13249969,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2006,50900,vinho,,rosado,,viniferas,,0
@@ -1886,11 +1886,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2006,0,derivados,destilado,,s
 derivados_vinho_acidificado,2006,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2006,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2006,0,derivados,outros,,,,,0
-vinho_de_mesa,2007,275287908,vinho,,,,,,1
+vinho_de_mesa,2007,275287908,vinho,mesa,,,,,1
 vinho_mesa_tinto,2007,228156220,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2007,42118552,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2007,5013136,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2007,43176484,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2007,43176484,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2007,24786071,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2007,17598428,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2007,791985,vinho,,rosado,,viniferas,,0
@@ -1937,11 +1937,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2007,0,derivados,destilado,,s
 derivados_vinho_acidificado,2007,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2007,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2007,0,derivados,outros,,,,,0
-vinho_de_mesa,2008,287506811,vinho,,,,,,1
+vinho_de_mesa,2008,287506811,vinho,mesa,,,,,1
 vinho_mesa_tinto,2008,241057928,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2008,42942053,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2008,3506830,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2008,47334501,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2008,47334501,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2008,27583032,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2008,18812571,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2008,938898,vinho,,rosado,,viniferas,,0
@@ -1988,11 +1988,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2008,0,derivados,destilado,,s
 derivados_vinho_acidificado,2008,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2008,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2008,0,derivados,outros,,,,,0
-vinho_de_mesa,2009,205418206,vinho,,,,,,1
+vinho_de_mesa,2009,205418206,vinho,mesa,,,,,1
 vinho_mesa_tinto,2009,164143454,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2009,39211278,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2009,2063474,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2009,39900568,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2009,39900568,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2009,18209043,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2009,21366975,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2009,324550,vinho,,rosado,,viniferas,,0
@@ -2039,11 +2039,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2009,0,derivados,destilado,,s
 derivados_vinho_acidificado,2009,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2009,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2009,0,derivados,outros,,,,,0
-vinho_de_mesa,2010,195267980,vinho,,,,,,1
+vinho_de_mesa,2010,195267980,vinho,mesa,,,,,1
 vinho_mesa_tinto,2010,157290088,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2010,35408083,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2010,2569809,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2010,24805713,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2010,24805713,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2010,11401406,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2010,13013027,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2010,391280,vinho,,rosado,,viniferas,,0
@@ -2090,11 +2090,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2010,0,derivados,destilado,,s
 derivados_vinho_acidificado,2010,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2010,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2010,0,derivados,outros,,,,,0
-vinho_de_mesa,2011,257840749,vinho,,,,,,1
+vinho_de_mesa,2011,257840749,vinho,mesa,,,,,1
 vinho_mesa_tinto,2011,210113358,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2011,46007504,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2011,1719887,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2011,47598471,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2011,47598471,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2011,24104740,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2011,22739426,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2011,754305,vinho,,rosado,,viniferas,,0
@@ -2141,11 +2141,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2011,0,derivados,destilado,,s
 derivados_vinho_acidificado,2011,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2011,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2011,0,derivados,outros,,,,,0
-vinho_de_mesa,2012,212777037,vinho,,,,,,1
+vinho_de_mesa,2012,212777037,vinho,mesa,,,,,1
 vinho_mesa_tinto,2012,175875432,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2012,34938249,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2012,1963356,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2012,45200730,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2012,45200730,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2012,24027589,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2012,20647238,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2012,525903,vinho,,rosado,,viniferas,,0
@@ -2192,11 +2192,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2012,0,derivados,destilado,,s
 derivados_vinho_acidificado,2012,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2012,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2012,0,derivados,outros,,,,,0
-vinho_de_mesa,2013,196904222,vinho,,,,,,1
+vinho_de_mesa,2013,196904222,vinho,mesa,,,,,1
 vinho_mesa_tinto,2013,163111797,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2013,32066403,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2013,1726022,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2013,45782530,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2013,45782530,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2013,23156458,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2013,21906349,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2013,719723,vinho,,rosado,,viniferas,,0
@@ -2243,11 +2243,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2013,0,derivados,destilado,,s
 derivados_vinho_acidificado,2013,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2013,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2013,0,derivados,outros,,,,,0
-vinho_de_mesa,2014,196173123,vinho,,,,,,1
+vinho_de_mesa,2014,196173123,vinho,mesa,,,,,1
 vinho_mesa_tinto,2014,157776363,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2014,37438069,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2014,958691,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2014,38464314,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2014,38464314,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2014,17208996,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2014,20054804,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2014,1200514,vinho,,rosado,,viniferas,,0
@@ -2294,11 +2294,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2014,0,derivados,destilado,,s
 derivados_vinho_acidificado,2014,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2014,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2014,0,derivados,outros,,,,,0
-vinho_de_mesa,2015,210308560,vinho,,,,,,1
+vinho_de_mesa,2015,210308560,vinho,mesa,,,,,1
 vinho_mesa_tinto,2015,169811472,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2015,39557250,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2015,939838,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2015,37148982,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2015,37148982,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2015,16745896,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2015,19561966,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2015,841120,vinho,,rosado,,viniferas,,0
@@ -2345,11 +2345,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2015,0,derivados,destilado,,s
 derivados_vinho_acidificado,2015,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2015,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2015,0,derivados,outros,,,,,0
-vinho_de_mesa,2016,86319015,vinho,,,,,,1
+vinho_de_mesa,2016,86319015,vinho,mesa,,,,,1
 vinho_mesa_tinto,2016,75279191,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2016,10727099,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2016,312725,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2016,18070626,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2016,18070626,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2016,8774847,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2016,8705066,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2016,590713,vinho,,rosado,,viniferas,,0
@@ -2396,11 +2396,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2016,0,derivados,destilado,,s
 derivados_vinho_acidificado,2016,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2016,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2016,0,derivados,outros,,,,,0
-vinho_de_mesa,2017,255015187,vinho,,,,,,1
+vinho_de_mesa,2017,255015187,vinho,mesa,,,,,1
 vinho_mesa_tinto,2017,1365957,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2017,217527985,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2017,36121245,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2017,44537870,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2017,44537870,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2017,21442212,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2017,21928400,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2017,1167258,vinho,,rosado,,viniferas,,0
@@ -2447,11 +2447,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2017,0,derivados,destilado,,s
 derivados_vinho_acidificado,2017,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2017,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2017,0,derivados,outros,,,,,0
-vinho_de_mesa,2018,218375636,vinho,,,,,,1
+vinho_de_mesa,2018,218375636,vinho,mesa,,,,,1
 vinho_mesa_tinto,2018,188270142,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2018,29229970,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2018,875524,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2018,38707220,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2018,38707220,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2018,19118254,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2018,18297257,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2018,1291709,vinho,,rosado,,viniferas,,0
@@ -2498,11 +2498,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2018,0,derivados,destilado,,s
 derivados_vinho_acidificado,2018,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2018,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2018,0,derivados,outros,,,,,0
-vinho_de_mesa,2019,144629737,vinho,,,,,,1
+vinho_de_mesa,2019,144629737,vinho,mesa,,,,,1
 vinho_mesa_tinto,2019,121045115,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2019,22032828,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2019,1551794,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2019,37615422,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2019,37615422,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2019,17389377,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2019,18193055,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2019,2032990,vinho,,rosado,,viniferas,,0
@@ -2549,11 +2549,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2019,0,derivados,destilado,,s
 derivados_vinho_acidificado,2019,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2019,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2019,0,derivados,outros,,,,,0
-vinho_de_mesa,2020,124200414,vinho,,,,,,1
+vinho_de_mesa,2020,124200414,vinho,mesa,,,,,1
 vinho_mesa_tinto,2020,103916391,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2020,19568734,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2020,715289,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2020,32516686,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2020,32516686,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2020,15451883,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2020,15487915,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2020,1576888,vinho,,rosado,,viniferas,,0
@@ -2600,11 +2600,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2020,500,derivados,destilado,
 derivados_vinho_acidificado,2020,65000,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2020,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2020,0,derivados,outros,,,,,0
-vinho_de_mesa,2021,173899995,vinho,,,,,,1
+vinho_de_mesa,2021,173899995,vinho,mesa,,,,,1
 vinho_mesa_tinto,2021,146075996,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2021,26432799,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2021,1391200,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2021,43474998,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2021,43474998,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2021,20433249,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2021,20867999,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2021,2173750,vinho,,rosado,,viniferas,,0
@@ -2651,11 +2651,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2021,3000,derivados,destilado
 derivados_vinho_acidificado,2021,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2021,543510,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2021,322,derivados,outros,,,,,0
-vinho_de_mesa,2022,195031611,vinho,,,,,,1
+vinho_de_mesa,2022,195031611,vinho,mesa,,,,,1
 vinho_mesa_tinto,2022,162844214,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2022,30198430,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2022,1988968,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2022,47511796,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2022,47511796,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2022,24417918,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2022,20896613,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2022,2197265,vinho,,rosado,,viniferas,,0
@@ -2702,11 +2702,11 @@ derivados_destilado_alcoolico_simples_de_bagaceira,2022,4300,derivados,destilado
 derivados_vinho_acidificado,2022,0,derivados,vinho,acidificado,,,,0
 derivados_mosto_parcialmente_fermentado,2022,0,derivados,mosto,,parcialmente fermentado,,,0
 derivados_outros_derivados,2022,247228,derivados,outros,,,,,0
-vinho_de_mesa,2023,169762429,vinho,,,,,,1
+vinho_de_mesa,2023,169762429,vinho,mesa,,,,,1
 vinho_mesa_tinto,2023,139320884,vinho,mesa,tinto,,,,0
 vinho_mesa_branco,2023,27910299,vinho,mesa,branco,,,,0
 vinho_mesa_rosado,2023,2531246,vinho,mesa,rosado,,,,0
-vinho_fino_de_mesa_vinifera,2023,46268556,vinho,,,,,,1
+vinho_fino_de_mesa_vinifera,2023,46268556,vinho,mesa,,fino,vinifera,,1
 vinho_viniferas_tinto,2023,23615783,vinho,,tinto,,viniferas,,0
 vinho_viniferas_branco,2023,20693437,vinho,,branco,,viniferas,,0
 vinho_viniferas_rosado,2023,1959336,vinho,,rosado,,viniferas,,0
