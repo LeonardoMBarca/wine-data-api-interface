@@ -186,5 +186,4 @@ def main():
         print(f"ETL process failed: {e}")
 
 if __name__ == '__main__':
-    processed_df = main()
-    print(processed_df.head())
+    main()

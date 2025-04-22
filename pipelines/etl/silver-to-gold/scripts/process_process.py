@@ -11,9 +11,10 @@ def dimensional_modeling_csv(path):
       - categoria
       - subcategoria
       - tipo_estilo
-      - processamento
-      - variedade_origem
-      - metodo_processo
+      - tipo_estilo
+      - origem
+      - classificacao
+      - total
     Returns the transformed DataFrame.
     """
     try:
@@ -49,28 +50,41 @@ def dimensional_modeling_csv(path):
                 "categoria": None,
                 "subcategoria": None,
                 "tipo_estilo": None,
-                "processamento": None,
-                "variedade_origem": None,
-                "metodo_processo": None,
+                "origem": None,
+                "classificacao": None,
                 "total": None
             }
 
-            if tokens and tokens[0] in ["tintas", "brancas", "rosadas", "outros"]:
-                if "brancas_rosadas" in tokens[0]:
-                    attr["categoria"] = "brancas_rosadas"
-                else:
-                    attr["categoria"] = tokens[0]
+            if not tokens:
+                attr_mapping[original_value] = attr
+                continue
 
-                if original_value in total_values:
-                    attr["total"] = 1
+            if tokens and tokens[0] in ["tintas", "brancas"]:
+                attr["categoria"] = "brancas_rosadas" if "brancas" in original_value and "rosadas" in original_value else tokens[0]
 
-                else:
-                    attr["total"] = 0
+                attr["total"] = 1 if original_value in total_values else 0
 
+                # Subcategoria
+                if len(tokens) > 1:
+                    attr["subcategoria"] = tokens[1]
 
+                # Tipo/Estilo
+                tipo_keywords = {"viniferas", "americanas", "mistura", "tinto", "rosado", "branco", "precoce"}
+                estilo = [t for t in tokens if t in tipo_keywords]
+                attr["tipo_estilo"] = "_".join(estilo) if estilo else None
 
-            else:
-                attr["total"] = 1
+                # Origem
+                origem_keywords = {"brs", "iac", "niagara", "concord", "goethe", "malvasia", "moscatel", "champagnon", "herbemont", "isabel"}
+                origem = [t for t in tokens if any(t.startswith(ok) for ok in origem_keywords)]
+                attr["origem"] = "_".join(origem) if origem else None
+
+                # Classificação
+                classificacao = [t for t in tokens if "sem_classificacao" in t or "mosem_classificacaoato" in t or "brsem_classificacao" in t or "musem_classificacao" in t]
+                attr["classificacao"] = "_".join(classificacao) if classificacao else None
+                
+            
+            elif original_value == "sem_classificacao":
+                attr["total"] = 1 if original_value in total_values else 0
 
             attr_mapping[original_value] = attr
 
@@ -83,13 +97,12 @@ def dimensional_modeling_csv(path):
     try:
         logging.info("Mapping attributes to DataFrame columns")
         
-        df["control"] = df["control"].fillna("outros_produtos_comercializados")
+        df["control"] = df["control"].fillna("outros")
         df["categoria"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("categoria"))
         df["subcategoria"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("subcategoria"))
         df["tipo_estilo"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("tipo_estilo"))
-        df["processamento"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("processamento"))
-        df["variedade_origem"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("variedade_origem"))
-        df["metodo_processo"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("metodo_processo"))
+        df["origem"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("origem"))
+        df["classificacao"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("classificacao"))
         df["total"] = df["control"].map(lambda x: attr_mapping.get(x, {}).get("total"))
 
         logging.info("Attribute mapping applied successfully to DataFrame")
@@ -106,24 +119,27 @@ def main():
     Reads the production CSV file from the silver layer, applies dimensional modeling to create
     enriched attributes, and saves the transformed data into the gold layer.
     """
-    try:
-        logging.info("Starting process_com.py")
-        csv_path = os.path.join("data", "silver-layer", "comercio.csv")
-        gold_path = "data/gold-layer"
-        output_file = os.path.join(gold_path, "comercio.csv")
-        
-        logging.info("Starting dimensional modeling process")
-        df = dimensional_modeling_csv(csv_path)
-        
-        os.makedirs(gold_path, exist_ok=True)
-        df.to_csv(output_file, index=False)
-        logging.info("Process completed successfully. Output saved to: %s", output_file)
-        print(f"New processed data is in: {output_file}")
+    logging.info("Starting process_com.py")
+    csv_path = [fr"{os.path.join("data", "silver-layer", f"Processa{i}.csv")}" for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
+    gold_path = "data/gold-layer"
+    output_file = [fr"{os.path.join(gold_path, f"Processa{i}.csv")}" for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
+
+    try:        
+        for i, e in enumerate(csv_path):
+            if output_file[i] == fr"{os.path.join(gold_path, f"ProcessaViniferas.csv")}":
+                logging.info("Starting dimensional modeling process")
+                df = dimensional_modeling_csv(e)
+            else:
+                df = dimensional_modeling_csv(e)
+            
+            os.makedirs(gold_path, exist_ok=True)
+            df.to_csv(output_file[i], index=False)
+            logging.info("Process completed successfully. Output saved to: %s", output_file[i])
+            print(f"New processed data is in: {output_file[i]}")
 
     except Exception as e:
         logging.error("Critical error in main: %s", e)
         print(f"ETL process failed: {e}")
 
 if __name__ == '__main__':
-    processed_df = main()
-    print(processed_df.head())
+    main()
