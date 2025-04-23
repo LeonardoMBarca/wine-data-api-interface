@@ -25,6 +25,6 @@ CSV_LINKS = {
     "ExpSuco": "http://vitibrasil.cnpuv.embrapa.br/download/ExpSuco.csv",
 }
 
-DOWNLOAD_DIR = "tech-challenge-fiap-machine-learning-api/data/bronze-layer"
+DOWNLOAD_DIR = "data/bronze-layer"
 LOG_FILE = "crawler/logs/scraper.log"
 

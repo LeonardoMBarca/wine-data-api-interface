@@ -2,7 +2,10 @@ import os
 import requests
 import logging
 import shutil
-from config import CSV_LINKS, DOWNLOAD_DIR, LOG_FILE
+from crawler.config import CSV_LINKS, DOWNLOAD_DIR, LOG_FILE
+
+# Verifica se o diretório de logs existe, caso contrário, cria-o
+os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
 # Configuração de logs
 logging.basicConfig(
