@@ -1,12 +1,18 @@
+import os
+from datetime import timedelta
 from flask import Flask
 from flask_jwt_extended import JWTManager
 from .routes.auth_routes import auth_bp
 from .routes.data_routes import data_bp
 from .routes.crawler_routes import crawler_bp
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
-app.config["JWT_SECRET_KEY"] = "236278"
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "default_secret_key")
+app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=30)
 jwt = JWTManager(app)
 
 app.register_blueprint(auth_bp, url_prefix="/auth")

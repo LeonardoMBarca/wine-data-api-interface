@@ -1,4 +1,18 @@
-# Tech Challenge FIAP Machine Learning API
+# 📦 Tech Challenge FIAP Machine Learning API
+
+Este projeto é uma **API REST** desenvolvida com **Flask**, utilizando **autenticação JWT** para proteger seus endpoints. A estrutura foi organizada seguindo boas práticas de modularidade, facilitando a manutenção e escalabilidade do sistema.
+
+## ⚙️ Funcionalidades
+
+### 🔐 Autenticação
+
+- **Endpoint:** `POST /auth/login`  
+- Gera tokens JWT com validade de **30 minutos** para autenticação de usuários.
+
+### 🕷️ Execução do Crawler
+
+- **Endpoint:** `POST /crawler/executar`  
+- Realiza o download de arquivos CSV e armazena os dados na **camada bronze-layer**
 
 ## **1. Configuração Inicial**
 
@@ -31,6 +45,12 @@ Instale as dependências listadas no arquivo `requirements.txt`:
 pip install -r requirements.txt
 ```
 
+### **1.4. Configuração de Variáveis de Ambiente**
+Crie um arquivo chamado `.env` na raiz do projeto e adicione a seguinte variável:
+
+```bash
+JWT_SECRET_KEY=<sua_chave_secreta>
+```
 ---
 
 ## **2. Executar a API**
