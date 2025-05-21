@@ -2,7 +2,8 @@ import os
 import logging
 import pandas as pd
 import re
-from scripts.utils import split_column_value  # This function returns a list: [original_value, [tokens]]
+from pipelines.etl.silver_to_gold.scripts.utils import split_column_value
+
 
 def dimensional_modeling_csv(path):
     """
@@ -120,13 +121,14 @@ def main():
     enriched attributes, and saves the transformed data into the gold layer.
     """
     logging.info("Starting process_com.py")
-    csv_path = [fr"{os.path.join("data", "silver-layer", f"Processa{i}.csv")}" for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
+    csv_path = [os.path.join("data", "silver-layer", f"Processa{i}.csv") for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
     gold_path = "data/gold-layer"
-    output_file = [fr"{os.path.join(gold_path, f"Processa{i}.csv")}" for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
+    output_file = [os.path.join(gold_path, f"Processa{i}.csv") for i in ["Americanas", "Mesa", "Semclass", "Viniferas"]]
+
 
     try:        
         for i, e in enumerate(csv_path):
-            if output_file[i] == fr"{os.path.join(gold_path, f"ProcessaViniferas.csv")}":
+            if output_file[i] == os.path.join(gold_path, "ProcessaViniferas.csv"):
                 logging.info("Starting dimensional modeling process")
                 df = dimensional_modeling_csv(e)
             else:

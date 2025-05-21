@@ -2,7 +2,7 @@ import os
 import logging
 import pandas as pd
 import re
-from scripts.utils import split_column_value
+from pipelines.etl.silver_to_gold.scripts.utils import split_column_value
 
 def dimensional_modeling_csv(path):
     """

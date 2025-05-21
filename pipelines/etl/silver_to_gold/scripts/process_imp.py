@@ -2,7 +2,9 @@ import os
 import logging
 import pandas as pd
 import re
-from scripts.utils import split_column_value  # This function returns a list: [original_value, [tokens]]
+# from scripts.utils import split_column_value  # This function returns a list: [original_value, [tokens]]
+from pipelines.etl.silver_to_gold.scripts.utils import split_column_value
+
 
 def dimensional_modeling_csv(path):
     """
@@ -36,6 +38,25 @@ def dimensional_modeling_csv(path):
     attr_mapping = {}
     try:
         logging.info("Building attribute mapping based on tokens")
+
+        for entry in columns_value_list:
+            original_value, tokens = entry
+            attr = {
+                "nao_consta": None
+            }
+
+            if not tokens:
+                attr_mapping[original_value] = attr
+                continue
+
+            if original_value == "nao_consta_na_tabela" or original_value == "nao_declarados":
+                attr["nao_consta"] = 1
+            
+            else:
+                attr["nao_consta"] = 0
+                
+            attr_mapping[original_value] = attr
+
         logging.info("Attribute mapping built for %d pais values", len(attr_mapping))
 
     except Exception as e:
@@ -46,6 +67,7 @@ def dimensional_modeling_csv(path):
         logging.info("Mapping attributes to DataFrame columns")
         
         df["pais"] = df["pais"].fillna("outros")
+        df["nao_consta"] = df["pais"].map(lambda x: attr_mapping.get(x, {}).get("nao_consta"))
 
         logging.info("Attribute mapping applied successfully to DataFrame")
 
@@ -62,13 +84,17 @@ def main():
     enriched attributes, and saves the transformed data into the gold layer.
     """
     logging.info("Starting process_com.py")
-    csv_path = [fr"{os.path.join("data", "silver-layer", f"Exp{i}.csv")}" for i in ["Uva", "Suco", "Vinho", "Espumantes"]]
+    csv_path = [os.path.join("data", "silver-layer", f"Imp{i}.csv") for i in ["Frescas", "Passas", "Suco", "Vinhos", "Espumantes"]]
     gold_path = "data/gold-layer"
-    output_file = [fr"{os.path.join(gold_path, f"Exp{i}.csv")}" for i in ["Uva", "Suco", "Vinho", "Espumantes"]]
+    output_file = [os.path.join(gold_path, f"Imp{i}.csv") for i in ["Frescas", "Passas", "Suco", "Vinhos", "Espumantes"]]
 
     try:        
         for i, e in enumerate(csv_path):
-            df = dimensional_modeling_csv(e)
+            if output_file[i] == os.path.join(gold_path, "ImpSuco.csv"):
+                logging.info("Starting dimensional modeling process")
+                df = dimensional_modeling_csv(e)
+            else:
+                df = dimensional_modeling_csv(e)
             
             os.makedirs(gold_path, exist_ok=True)
             df.to_csv(output_file[i], index=False)

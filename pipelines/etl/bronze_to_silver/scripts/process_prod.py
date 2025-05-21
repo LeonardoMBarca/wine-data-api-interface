@@ -1,7 +1,7 @@
 import os
 import logging
 import pandas as pd
-from scripts.utils import standardize_dataframe, accent_remove
+from pipelines.etl.bronze_to_silver.scripts.utils import standardize_dataframe, accent_remove
 
 def process_csv(path):
     """
@@ -80,7 +80,7 @@ def main():
     Loads the input file, processes it, and saves the transformed data
     into the silver layer.
     """
-    csv_path =  fr"{os.path.join("data", "bronze-layer", "Producao.csv")}"
+    csv_path = fr"{os.path.join('data', 'bronze-layer', 'Producao.csv')}"
     silver_path = "data/silver-layer"
     output_file = os.path.join(silver_path, f"producao.csv")
     
