@@ -1,23 +1,35 @@
 # 📦 Tech Challenge FIAP Machine Learning API
 
-Este projeto é uma **API REST** desenvolvida com **Flask**, utilizando **autenticação JWT** para proteger seus endpoints. A estrutura foi organizada seguindo boas práticas de modularidade, facilitando a manutenção e escalabilidade do sistema.
+Este projeto é uma **API REST** desenvolvida com **Flask**, utilizando **autenticação JWT** para proteger seus endpoints. A estrutura foi organizada seguindo boas práticas de modularidade, facilitando a manutenção e escalabilidade do sistema. A API realiza **coleta automatizada de dados da Embrapa** e expõe os dados já tratados para consumo por aplicações externas ou modelos de machine learning.
 
 ## ⚙️ Funcionalidades
 
 ### 🔐 Autenticação
 
-- **Endpoint:** `POST /auth/login`  
-- Gera tokens JWT com validade de **30 minutos** para autenticação de usuários.
+* **Endpoint:** `POST /auth/login`
+* Gera tokens JWT com validade de **30 minutos** para autenticação de usuários.
 
-### 🕷️ Execução do Crawler
+### 🕷️ Coleta e Processamento de Dados (Crawler)
 
-- **Endpoint:** `POST /crawler/executar`  
-- Realiza o download de arquivos CSV e armazena os dados na **camada bronze-layer**
+* **Endpoint:** `POST /crawler/executar`
+* Realiza:
+
+  1. Download dos dados brutos do site da Embrapa (camada Bronze)
+  2. Limpeza e padronização (camada Silver)
+  3. Curadoria final e dados prontos para uso (camada Gold)
+
+### 📊 Consulta Pública de Dados
+
+* **Endpoint:** `GET /<categoria>/<subcategoria>`
+* Exemplo: `/exportacao/suco`, `/producao/default`
+* Consulta os dados atualizados diretamente da camada Gold
+* O crawler é executado automaticamente antes de servir os dados 💡
+
+---
 
 ## **1. Configuração Inicial**
 
 ### **1.1. Clonar o Repositório**
-Certifique-se de que o repositório está clonado no seu ambiente local:
 
 ```bash
 git clone <url-do-repositorio>
@@ -26,73 +38,68 @@ cd tech-challenge-fiap-machine-learning-api
 
 ### **1.2. Criar e Ativar o Ambiente Virtual**
 
-#### **Windows**
+#### Windows
+
 ```bash
 python -m venv venv
 .venv\Scripts\activate
 ```
 
-#### **Linux/Mac**
+#### Linux/Mac
+
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
 ### **1.3. Instalar Dependências**
-Instale as dependências listadas no arquivo `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ### **1.4. Configuração de Variáveis de Ambiente**
-Crie um arquivo chamado `.env` na raiz do projeto e adicione a seguinte variável:
+
+Crie um arquivo `.env` com:
 
 ```bash
 JWT_SECRET_KEY=<sua_chave_secreta>
 ```
+
 ---
 
 ## **2. Executar a API**
 
 ### **2.1. Iniciar o Servidor**
-Execute o arquivo `app.py` para iniciar o servidor Flask:
 
 ```bash
 python -m api.app
 ```
 
-O servidor será iniciado em:  
-`http://127.0.0.1:5000`
+API disponível em: `http://127.0.0.1:5000`
+
+Acesse a documentação Swagger UI: `http://127.0.0.1:5000/apidocs`
 
 ---
 
 ## **3. Autenticação**
 
 ### **3.1. Endpoint de Login**
-Para acessar os endpoints protegidos, você precisa obter um token JWT. Use o endpoint `/auth/login`.
 
-#### **Via Terminal**
 ```bash
-curl -X POST http://127.0.0.1:5000/auth/login -H "Content-Type: application/json" -d '{"username": "admin", "password": "admin"}'
+POST /auth/login
 ```
 
-#### **Via Insomnia**
-1. Crie uma nova requisição:
-   - **Método**: `POST`
-   - **URL**: `http://127.0.0.1:5000/auth/login`
-2. Vá para a aba **Body** e selecione **JSON**.
-3. Adicione o seguinte conteúdo:
-   ```json
-   {
-     "username": "admin",
-     "password": "admin"
-   }
-   ```
-4. Envie a requisição.
+#### Body (JSON):
 
-**Resposta Esperada**  
-Se as credenciais forem válidas, você receberá um token JWT:
+```json
+{
+  "username": "user",
+  "password": "user"
+}
+```
+
+#### Exemplo de resposta:
 
 ```json
 {
@@ -100,79 +107,51 @@ Se as credenciais forem válidas, você receberá um token JWT:
 }
 ```
 
-Copie o valor de `access_token`.
+---
+
+## **4. Executar Crawler Manualmente**
+
+### **4.1. Endpoint Protegido**
+
+```bash
+POST /crawler/executar
+```
+
+Requer header:
+
+```http
+Authorization: Bearer <seu_token>
+```
 
 ---
 
-## **4. Executar o Crawler**
+## **5. Consultar Dados Tratados (Gold Layer)**
 
-### **4.1. Endpoint do Crawler**
-O endpoint `/crawler/executar` baixa os arquivos CSV para a camada `bronze-layer`.
+### **5.1. Exemplo de endpoint público:**
 
-#### **Via Terminal**
 ```bash
-curl -X POST http://127.0.0.1:5000/crawler/executar -H "Authorization: Bearer <seu_token_jwt>"
+GET /exportacao/suco
+GET /importacao/espumantes
+GET /producao/default
 ```
 
-#### **Via Insomnia**
-1. Crie uma nova requisição:
-   - **Método**: `POST`
-   - **URL**: `http://127.0.0.1:5000/crawler/executar`
-2. Vá para a aba **Headers** e adicione:
-   - **Key**: `Authorization`
-   - **Value**: `Bearer <seu_token_jwt>`
-3. Envie a requisição.
+#### Requer header:
 
-**Resposta Esperada**  
-```json
-{
-  "mensagem": "Crawler executado com sucesso!"
-}
+```http
+Authorization: Bearer <seu_token>
 ```
 
-Os arquivos CSV serão baixados na pasta `bronze-layer`.
+A cada consulta, o pipeline completo é executado automaticamente (para fins de demonstração do MVP).
 
----
-
-## **5. Consultar Dados da Camada Gold**
-
-### **5.1. Endpoint de Consulta**
-O endpoint `/data/consulta/<tabela>` permite consultar os dados de uma tabela específica da camada `gold-layer`.
-
-#### **Via Terminal**
-```bash
-curl -X GET http://127.0.0.1:5000/data/consulta/ExpEspumantes -H "Authorization: Bearer <seu_token_jwt>"
-```
-
-#### **Via Insomnia**
-1. Crie uma nova requisição:
-   - **Método**: `GET`
-   - **URL**: `http://127.0.0.1:5000/data/consulta/ExpEspumantes`
-2. Vá para a aba **Headers** e adicione:
-   - **Key**: `Authorization`
-   - **Value**: `Bearer <seu_token_jwt>`
-3. Envie a requisição.
-
-**Resposta Esperada**  
-Se a tabela for encontrada:
+#### Exemplo de resposta:
 
 ```json
 {
-  "mensagem": "Tabela 'ExpEspumantes' acessada com sucesso!",
-  "usuario": "admin",
+  "mensagem": "Dados de exportacao/suco carregados com sucesso!",
+  "usuario": "user",
   "dados": [
-    {
-      "pais": "africa_do_sul",
-      "ano": 1970,
-      "kilograms": 0,
-      "dollars": 0
-    },
-    {
-      "pais": "alemanha",
-      "ano": 1970,
-      "kilograms": 0,
-      "dollars": 0
-    }
+    {"pais": "alemanha", "ano": 1970, "kilograms": 0, "dollars": 0},
+    {"pais": "brasil", "ano": 1971, "kilograms": 100, "dollars": 2000}
   ]
 }
 ```
@@ -181,27 +160,47 @@ Se a tabela for encontrada:
 
 ## **6. Estrutura do Projeto**
 
-Certifique-se de que a estrutura do projeto está organizada assim:
-
 ```
 tech-challenge-fiap-machine-learning-api/
 ├── api/
 │   ├── app.py
 │   ├── routes/
-│   │   ├── auth_routes.py
-│   │   ├── crawler_routes.py
-│   │   └── data_routes.py
+│   │   ├── auth.py
+│   │   ├── crawler.py
+│   │   └── data.py
 ├── crawler/
-│   ├── __init__.py
-│   ├── config.py
 │   ├── scraper/
-│   │   ├── __init__.py
 │   │   └── downloader.py
+│   └── __init__.py
+├── pipelines/
+│   ├── etl/
+│   │   ├── bronze_to_silver/
+│   │   │   └── main.py
+│   │   └── silver_to_gold/
+│   │       └── main.py
 ├── data/
 │   ├── bronze-layer/
-│   ├── gold-layer/
 │   ├── silver-layer/
-├── venv/
+│   └── gold-layer/
 ├── requirements.txt
 ├── README.md
+└── .env
 ```
+
+---
+
+## 🚀 Cenário de Aplicação com Machine Learning
+
+Esta API pode alimentar modelos de previsão de:
+
+* Exportações futuras de vinhos ou sucos
+* Produção estimada para o próximo ano
+* Análise de sazonalidade e demanda
+
+Em cenários reais, a atualização automática do pipeline seria feita por agendamento (Jenkins, cron, Airflow), e não a cada consulta.
+
+Para este MVP, **cada chamada executa o pipeline para garantir dados atualizados e demonstrar o fluxo completo.**
+
+---
+
+

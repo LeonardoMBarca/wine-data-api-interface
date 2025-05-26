@@ -12,7 +12,7 @@ crawler_bp = Blueprint("crawler", __name__)
 @jwt_required()
 @swag_from({
     'tags': ['Crawler'],
-    'summary': 'Executar pipeline de dados',
+    'summary': 'Executar pipeline de dados se caso necessário',
     'description': 'Executa as etapas do processo de ingestão: download da base, bronze → silver, silver → gold.',
     'security': [{'Bearer': []}],
     'responses': {

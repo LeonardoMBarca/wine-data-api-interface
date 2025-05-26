@@ -3,6 +3,10 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from flasgger import swag_from
 import os
 import pandas as pd
+# IMPORTANDO O PIPELINE
+from crawler.scraper.downloader import download_base
+from pipelines.etl.bronze_to_silver.main import main as run_bronze_to_silver
+from pipelines.etl.silver_to_gold.main import main as run_silver_to_gold
 
 data_bp = Blueprint("data", __name__)
 GOLD_LAYER_PATH = "data/gold-layer"
@@ -88,6 +92,9 @@ def consulta_categoria_subcategoria(categoria, subcategoria):
     }
 
     try:
+        download_base()
+        run_bronze_to_silver()
+        run_silver_to_gold()
         arquivo_csv = arquivos[categoria].get(subcategoria) or arquivos[categoria]["default"]
         caminho = os.path.join(GOLD_LAYER_PATH, arquivo_csv)
 
