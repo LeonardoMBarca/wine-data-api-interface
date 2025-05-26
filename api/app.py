@@ -26,5 +26,7 @@ app.register_blueprint(crawler_bp, url_prefix="/crawler")
 app.register_blueprint(data_bp, url_prefix="/data")
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0', port=5000)
