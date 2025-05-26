@@ -15,50 +15,103 @@ GOLD_LAYER_PATH = "data/gold-layer"
 @jwt_required()
 @swag_from({
     'tags': ['Consulta de Dados'],
-    'summary': 'Consulta dados tratados por categoria e subcategoria',
-    'description': 'Esse endpoint retorna os dados de uma tabela CSV localizada na camada gold, categorizada por aba (ex: exportação, importação, processamento, etc).',
+    'summary': 'Consulta dados atualizados por categoria e subcategoria',
+    'description': '''
+Este endpoint consulta dados tratados da **camada Gold** após executar automaticamente o pipeline de ingestão (crawler + ETL).
+
+As categorias representam as seções do site da Embrapa (como Produção ou Exportação), e as subcategorias representam tipos de produto ou agrupamentos internos (como Suco ou Vinhos).
+
+**Categorias disponíveis:**
+- `exportacao`
+- `importacao`
+- `processamento`
+- `comercializacao`
+- `producao`
+
+**Subcategorias variam por categoria. Exemplo:**
+- `/exportacao/suco`
+- `/importacao/espumantes`
+- `/producao/default`
+''',
     'parameters': [
         {
             'name': 'categoria',
             'in': 'path',
             'type': 'string',
             'required': True,
-            'description': 'Categoria da informação: exportacao, importacao, processamento, comercializacao, producao.'
+            'description': 'Categoria da aba (ex: exportacao, importacao, processamento, comercializacao, producao)'
         },
         {
             'name': 'subcategoria',
             'in': 'path',
             'type': 'string',
             'required': True,
-            'description': 'Subcategoria da informação: exemplo - espumantes, suco, vinhos, etc.'
+            'description': 'Tipo de dado dentro da categoria (ex: suco, vinhos, espumantes, default)'
         }
     ],
     'security': [{'Bearer': []}],
     'responses': {
         200: {
             'description': 'Consulta realizada com sucesso',
-            'examples': {
+            'content': {
                 'application/json': {
-                    "mensagem": "Dados de exportacao/suco carregados com sucesso!",
-                    "usuario": "usuario_exemplo",
-                    "dados": [{"coluna1": "valor1"}, {"coluna1": "valor2"}]
+                    'example': {
+                        "mensagem": "Dados de exportacao/suco carregados com sucesso!",
+                        "usuario": "user",
+                        "dados": [
+                            {
+                                "pais": "brasil",
+                                "ano": 1970,
+                                "kilograms": 1000,
+                                "dollars": 5000
+                            },
+                            {
+                                "pais": "alemanha",
+                                "ano": 1970,
+                                "kilograms": 0,
+                                "dollars": 0
+                            }
+                        ]
+                    }
                 }
             }
         },
         400: {
-            'description': 'Categoria ou subcategoria inválida'
+            'description': 'Categoria ou subcategoria inválida',
+            'content': {
+                'application/json': {
+                    'example': {
+                        "erro": "Categoria ou subcategoria inválida."
+                    }
+                }
+            }
         },
         404: {
-            'description': 'Arquivo não encontrado'
+            'description': 'Arquivo da camada gold não encontrado',
+            'content': {
+                'application/json': {
+                    'example': {
+                        "erro": "Arquivo 'ExpSuco.csv' não encontrado."
+                    }
+                }
+            }
         },
         500: {
-            'description': 'Erro interno'
+            'description': 'Erro interno inesperado',
+            'content': {
+                'application/json': {
+                    'example': {
+                        "erro": "Erro interno: File not found or pipeline error"
+                    }
+                }
+            }
         }
     }
 })
+
 def consulta_categoria_subcategoria(categoria, subcategoria):
     """
-    Consulta dados da camada gold por categoria/subcategoria
+    Consulta dados da api por categora e subcategoria.
     ---
     """
     current_user = get_jwt_identity()
