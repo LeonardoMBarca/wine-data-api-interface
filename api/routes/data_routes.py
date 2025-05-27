@@ -4,7 +4,7 @@ from flasgger import swag_from
 import os
 import pandas as pd
 # IMPORTANDO O PIPELINE
-from crawler.scraper.downloader import download_base
+from crawler.scraper.downloader import download_base,clear_data
 from pipelines.etl.bronze_to_silver.main import main as run_bronze_to_silver
 from pipelines.etl.silver_to_gold.main import main as run_silver_to_gold
 
@@ -145,9 +145,13 @@ def consulta_categoria_subcategoria(categoria, subcategoria):
     }
 
     try:
-        download_base()
-        run_bronze_to_silver()
-        run_silver_to_gold()
+        if download_base():
+            run_bronze_to_silver()
+            run_silver_to_gold()
+        else:
+            print("Download falhou. ETL não será executado. Usando dados anteriores.")
+
+        # leitura normal do arquivo CSV
         arquivo_csv = arquivos[categoria].get(subcategoria) or arquivos[categoria]["default"]
         caminho = os.path.join(GOLD_LAYER_PATH, arquivo_csv)
 
@@ -165,5 +169,9 @@ def consulta_categoria_subcategoria(categoria, subcategoria):
 
     except KeyError:
         return jsonify({"erro": "Categoria ou subcategoria inválida."}), 400
+
     except Exception as e:
         return jsonify({"erro": f"Erro interno: {str(e)}"}), 500
+
+
+

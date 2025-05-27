@@ -21,35 +21,42 @@ def clear_data():
     os.makedirs(DOWNLOAD_DIR)
 
 
-# Efetua o download da base.
 def download_base():
-    clear_data()
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
+
+    # Primeiro: verifica se todos os links estão acessíveis
+    for name, url in CSV_LINKS.items():
+        try:
+            response = requests.head(url, timeout=10)
+            response.raise_for_status()
+        except Exception as e:
+            msg = f"[ERRO] Não foi possível acessar o link de {name}.csv ({url}): {e}"
+            print(msg)
+            logging.error(msg)
+            return False  # Impede o ETL e a exclusão de arquivos
+
+    # Se todos os links estiverem OK, então limpa a pasta e faz o download
+    clear_data()
 
     for name, url in CSV_LINKS.items():
         filepath = os.path.join(DOWNLOAD_DIR, f"{name}.csv")
 
-        if os.path.exists(filepath):
-            msg = f"{name}.csv already exists"
-            print(msg)
-            logging.info(msg)
-            continue
-
         try:
-            print(f"Downloading {name}.csv  {url}...")
+            print(f"Baixando {name}.csv de {url}...")
             response = requests.get(url)
-            response.raise_for_status()  
+            response.raise_for_status()
 
             with open(filepath, "wb") as f:
                 f.write(response.content)
 
-            msg = f"{name}.csv download finished."
-            logging.info(msg)
+            logging.info(f"{name}.csv baixado com sucesso.")
 
         except Exception as e:
-            msg = f"Download error {name}.csv de {url} — {e}"
+            msg = f"[ERRO] Falha ao baixar {name}.csv: {e}"
             print(msg)
             logging.error(msg)
+            return False  # Parar se algum download falhar após clear_data()
 
-    print("\nProcess finished check the logs in:", LOG_FILE)
+    print("Download finalizado. Veja os logs em:", LOG_FILE)
+    return True
