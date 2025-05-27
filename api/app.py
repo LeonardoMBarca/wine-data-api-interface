@@ -7,6 +7,7 @@ from .routes.data_routes import data_bp
 from .routes.crawler_routes import crawler_bp
 from dotenv import load_dotenv
 from flasgger import Swagger
+from dashboard.routes import dashboard_bp
 
 load_dotenv()
 
@@ -24,6 +25,7 @@ jwt = JWTManager(app)
 app.register_blueprint(auth_bp, url_prefix="/auth")
 app.register_blueprint(crawler_bp, url_prefix="/crawler")
 app.register_blueprint(data_bp, url_prefix="/data")
+app.register_blueprint(dashboard_bp, url_prefix="")
 
 
 # if __name__ == "__main__":

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Comércio de Vinhos</title>
+    <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h2 style="margin-bottom: 20px; color: #1a73e8;">📊 Painel de Análise de Dados</h2>
+
+    <div class="filters">
+        <label>Ano:
+            <select id="filtro-ano">
+                <option value="">Todos</option>
+                {% for valor in filtros['ano'] %}
+                    <option value="{{ valor }}">{{ valor }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>Categoria:
+            <select id="filtro-categoria">
+                <option value="">Todas</option>
+                {% for valor in filtros['categoria'] %}
+                    <option value="{{ valor }}">{{ valor }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>Subcategoria:
+            <select id="filtro-subcategoria">
+                <option value="">Todas</option>
+                {% for valor in filtros['subcategoria'] %}
+                    <option value="{{ valor }}">{{ valor }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>Tipo/Estilo:
+            <select id="filtro-tipo">
+                <option value="">Todos</option>
+                {% for valor in filtros['tipo_estilo'] %}
+                    <option value="{{ valor }}">{{ valor }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>Processamento:
+            <select id="filtro-processamento">
+                <option value="">Todos</option>
+                {% for valor in filtros['processamento'] %}
+                    <option value="{{ valor }}">{{ valor }}</option>
+                {% endfor %}
+            </select>
+        </label>
+    </div>
+
+    <div class="resumo">
+        <p>Total de Litros: <span id="total-litros">0</span> L</p>
+        <p>Registros encontrados: <span id="total-registros">0</span></p>
+    </div>
+
+    <div class="graficos">
+        <canvas id="grafico-barras" height="200" style="max-height: 280px;"></canvas>
+        <canvas id="grafico-pizza" height="200" style="max-height: 280px;"></canvas>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                {% for coluna in colunas %}
+                    <th>{{ coluna }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        window.dadosComercio = {{ dados | tojson }};
+        window.colunasComercio = {{ colunas | tojson }};
+    </script>
+    <script src="{{ url_for('dashboard.static', filename='js/script.js') }}"></script>
+</body>
+</html>
