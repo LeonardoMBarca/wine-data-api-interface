@@ -1,3 +1,0 @@
-(Arquivo feito para explicar o propósito SUGERIDO de cada página. Lembrando que obviamente mudanças na estrutura não são um problema, desde que seja alinhado com toda o grupo para não criar conflitos dentro do código.)
-
-Pasta criada para ser o local dos códigos para a REST API, em Python (FastAPI). Local onde "deve" ficar as rotas, autentificação JWT, documentação Swagger.

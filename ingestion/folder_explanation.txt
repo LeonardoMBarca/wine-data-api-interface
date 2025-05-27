@@ -1,3 +1,0 @@
-(Arquivo feito para explicar o propósito SUGERIDO de cada página. Lembrando que obviamente mudanças na estrutura não são um problema, desde que seja alinhado com toda o grupo para não criar conflitos dentro do código.)
-
-Scripts que fazem a ingestão dos dados do crawler para a camada bronze.

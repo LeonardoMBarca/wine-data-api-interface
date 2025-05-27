@@ -1,8 +1,0 @@
-(Arquivo feito para explicar o propósito SUGERIDO de cada página. Lembrando que obviamente mudanças na estrutura não são um problema, desde que seja alinhado com toda o grupo para não criar conflitos dentro do código.)
-
-Local onde você armazena os dados brutos e transformados. Dividido em três camadas, seguindo boas práticas de data lake:
-- Bronze: Dados crus, diretamente coletados da embrapa pela api/crawler
-- Silver: Dados limpos e padronizados
-- Gold: Dados prontos para consumo ou para alimentar modelo de ML
-
-Achei interessante esta ideia, pois é uma ideia facilmente aplicável, já que básicamente é um ETL simples, e que faz com que o projeto pareça mais profissional.
