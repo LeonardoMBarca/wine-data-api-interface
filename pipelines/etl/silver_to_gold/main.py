@@ -1,8 +1,12 @@
 import os
 import logging
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 
 # Setup logging
-LOG_FILE = os.path.abspath(os.path.join("pipelines", "etl", "silver-to-gold", "logs", "etl_gold.log"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, "logs", "etl_gold.log")
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,

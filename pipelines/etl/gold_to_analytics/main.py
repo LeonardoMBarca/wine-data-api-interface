@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 
 # Setup logging
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_FILE = os.path.join(BASE_DIR, "logs", "etl_silver.log")
+LOG_FILE = os.path.join(BASE_DIR, "logs", "etl_analytics.log")
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 logging.basicConfig(
     filename=LOG_FILE,
@@ -15,13 +15,13 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     filemode='w',
     force=True
-)
+) 
 
-from pipelines.etl.bronze_to_silver.scripts.process_prod import main as process_prod
-from pipelines.etl.bronze_to_silver.scripts.process_prod import main as process_com
-from pipelines.etl.bronze_to_silver.scripts.process_prod import main as process_exp
-from pipelines.etl.bronze_to_silver.scripts.process_prod import main as process_imp
-from pipelines.etl.bronze_to_silver.scripts.process_prod import main as process_process
+from pipelines.etl.gold_to_analytics.scripts.process_prod import main as process_prod
+from pipelines.etl.gold_to_analytics.scripts.process_com import main as process_com
+from pipelines.etl.gold_to_analytics.scripts.process_exp import main as process_exp
+from pipelines.etl.gold_to_analytics.scripts.process_imp import main as process_imp
+from pipelines.etl.gold_to_analytics.scripts.process_process import main as process_process
 
 def main():
     process_prod()
