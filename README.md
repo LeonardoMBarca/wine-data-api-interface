@@ -164,40 +164,49 @@ A cada consulta, o pipeline completo é executado automaticamente (para fins de 
 tech-challenge-fiap-machine-learning-api/
 ├── api/
 │   ├── app.py
-│   ├── routes/
-│   │   ├── auth.py
-│   │   ├── crawler.py
-│   │   └── data.py
+│   └── routes/
+│       ├── auth.py
+│       ├── crawler.py
+│       └── data.py
+│
 ├── crawler/
-│   ├── scraper/
-│   │   └── downloader.py
-│   └── __init__.py
+│   ├── __init__.py
+│   └── scraper/
+│       └── downloader.py
+│
 ├── dashboard/
+│   ├── __init__.py
+│   ├── routes.py
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── style.css
-│   │   ├── js/
-│   │   │   └── script.js
-│   ├── templates/
-│   │   └── index.html
-│   └── routes.py
-│   └── __init__.py
+│   │   └── js/
+│   │       └── script.js
+│   └── templates/
+│       └── index.html
+│
 ├── pipelines/
-│   ├── etl/
-│   │   ├── bronze_to_silver/
-│   │   │   └── main.py
-│   │   └── silver_to_gold/
-│   │       └── main.py
-│   │   └── gold_to_analytics/
-│   │       └── main.py
+│   └── etl/
+│       ├── bronze_to_silver/
+│       │   └── scripts/
+│       │       └── main.py
+│       ├── silver_to_gold/
+│       │   └── scripts/
+│       │       └── main.py
+│       └── gold_to_analytics/
+│           └── scripts/
+│               └── main.py
+│
 ├── data/
 │   ├── bronze-layer/
 │   ├── silver-layer/
 │   ├── gold-layer/
 │   └── analytics/
-├── requirements.txt
+│
+├── .env
 ├── README.md
-└── .env
+└── requirements.txt
+
 ```
 
 ---
