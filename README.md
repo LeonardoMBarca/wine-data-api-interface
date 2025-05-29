@@ -172,16 +172,29 @@ tech-challenge-fiap-machine-learning-api/
 │   ├── scraper/
 │   │   └── downloader.py
 │   └── __init__.py
+├── dashboard/
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   └── script.js
+│   ├── templates/
+│   │   └── index.html
+│   └── routes.py
+│   └── __init__.py
 ├── pipelines/
 │   ├── etl/
 │   │   ├── bronze_to_silver/
 │   │   │   └── main.py
 │   │   └── silver_to_gold/
 │   │       └── main.py
+│   │   └── gold_to_analytics/
+│   │       └── main.py
 ├── data/
 │   ├── bronze-layer/
 │   ├── silver-layer/
-│   └── gold-layer/
+│   ├── gold-layer/
+│   └── analytics/
 ├── requirements.txt
 ├── README.md
 └── .env
