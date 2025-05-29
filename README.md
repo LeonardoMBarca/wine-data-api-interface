@@ -189,13 +189,13 @@ tech-challenge-fiap-machine-learning-api/
 │   └── etl/
 │       ├── bronze_to_silver/
 │       │   └── scripts/
-│       │       └── main.py
+│       │   └── main.py
 │       ├── silver_to_gold/
 │       │   └── scripts/
-│       │       └── main.py
+│       │   └── main.py
 │       └── gold_to_analytics/
 │           └── scripts/
-│               └── main.py
+│           └── main.py
 │
 ├── data/
 │   ├── bronze-layer/
@@ -206,7 +206,6 @@ tech-challenge-fiap-machine-learning-api/
 ├── .env
 ├── README.md
 └── requirements.txt
-
 ```
 
 ---
