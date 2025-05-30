@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Exportação de Vinhos</title>
+    <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2 style="margin-bottom: 20px; color: #34a853;">🌍 Painel de Exportação de Vinhos</h2>
+
+<!-- Menu de navegação -->
+<div style="background-color: #f0f4f8; padding: 20px; display: flex; justify-content: center; gap: 15px; border-bottom: 2px solid #1a73e8;">
+    <a href="{{ url_for('dashboard.index') }}" style="text-decoration: none;">
+        <button style="background-color: #1a73e8; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            📦 Comércio
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.exportacao') }}" style="text-decoration: none;">
+        <button style="background-color: #34a853; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🌍 Exportação
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.importacao') }}" style="text-decoration: none;">
+        <button style="background-color: #fbbc05; color: black; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🛬 Importação
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.processamento') }}" style="text-decoration: none;">
+        <button style="background-color: #ff7043; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            ⚙️ Processamento
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.producao') }}" style="text-decoration: none;">
+        <button style="background-color: #9c27b0; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🧪 Produção
+        </button>
+    </a>
+</div>
+
+<!-- Filtros disponíveis para exportação -->
+<div class="filters">
+    <label>Ano:
+        <select id="filtro-ano">
+            <option value="">Todos</option>
+            {% for valor in filtros['ano'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Categoria:
+        <select id="filtro-categoria">
+            <option value="">Todas</option>
+            {% for valor in filtros['categoria'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>País:
+        <select id="filtro-pais">
+            <option value="">Todos</option>
+            {% for valor in filtros['pais'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+</div>
+
+<!-- Resumo dos dados -->
+<div class="resumo">
+    <p>Total Exportado: <span id="total-kilograms">0</span> kg</p>
+    <p>Valor Total: $<span id="total-dollars">0</span></p>
+    <p>Registros encontrados: <span id="total-registros">0</span></p>
+</div>
+
+<!-- Gráficos -->
+<div class="graficos">
+    <canvas id="grafico-barras" height="200" style="max-height: 280px;"></canvas>
+    <canvas id="grafico-pizza" height="200" style="max-height: 280px;"></canvas>
+</div>
+
+<!-- Tabela -->
+<table>
+    <thead>
+        <tr>
+            {% for coluna in colunas %}
+                <th>{{ coluna }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    window.dadosExportacao = {{ dados | tojson }};
+    window.colunasExportacao = {{ colunas | tojson }};
+</script>
+<script src="{{ url_for('dashboard.static', filename='js/script_exportacao.js') }}"></script>
+</body>
+</html>

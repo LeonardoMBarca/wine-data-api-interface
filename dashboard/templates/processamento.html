@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Processamento de Vinhos</title>
+    <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2 style="margin-bottom: 20px; color: #ff7043;">⚙️ Painel de Processamento de Vinhos</h2>
+
+<div style="background-color: #f0f4f8; padding: 20px; display: flex; justify-content: center; gap: 15px; border-bottom: 2px solid #1a73e8;">
+    <a href="{{ url_for('dashboard.index') }}">
+        <button style="background-color: #1a73e8; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold;">📦 Comércio</button>
+    </a>
+    <a href="{{ url_for('dashboard.exportacao') }}">
+        <button style="background-color: #34a853; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold;">🌍 Exportação</button>
+    </a>
+    <a href="{{ url_for('dashboard.importacao') }}">
+        <button style="background-color: #fbbc05; color: black; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold;">🛬 Importação</button>
+    </a>
+    <a href="{{ url_for('dashboard.processamento') }}">
+        <button style="background-color: #ff7043; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold;">⚙️ Processamento</button>
+    </a>
+    <a href="{{ url_for('dashboard.producao') }}">
+        <button style="background-color: #9c27b0; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold;">🧪 Produção</button>
+    </a>
+</div>
+
+<div class="filters">
+    <label>Ano:
+        <select id="filtro-ano">
+            <option value="">Todos</option>
+            {% for valor in filtros['ano'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Categoria:
+        <select id="filtro-categoria">
+            <option value="">Todas</option>
+            {% for valor in filtros['categoria'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Subcategoria:
+        <select id="filtro-subcategoria">
+            <option value="">Todas</option>
+            {% for valor in filtros['subcategoria'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Tipo/Estilo:
+        <select id="filtro-tipo_estilo">
+            <option value="">Todos</option>
+            {% for valor in filtros['tipo_estilo'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Origem:
+        <select id="filtro-origem">
+            <option value="">Todas</option>
+            {% for valor in filtros['origem'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Classificação:
+        <select id="filtro-classificacao">
+            <option value="">Todas</option>
+            {% for valor in filtros['classificacao'] %}
+                <option value="{{ valor }}">{{ valor }}</option>
+            {% endfor %}
+        </select>
+    </label>
+</div>
+
+<div class="resumo">
+    <p>Total de Quilogramas: <span id="total-kilogramas">0</span> kg</p>
+    <p>Registros encontrados: <span id="total-registros">0</span></p>
+</div>
+
+<div class="graficos">
+    <canvas id="grafico-barras" height="200" style="max-height: 280px;"></canvas>
+    <canvas id="grafico-pizza" height="200" style="max-height: 280px;"></canvas>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            {% for coluna in colunas %}
+                <th>{{ coluna }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    window.dadosProcessamento = {{ dados | tojson }};
+    window.colunasProcessamento = {{ colunas | tojson }};
+</script>
+<script src="{{ url_for('dashboard.static', filename='js/script_processamento.js') }}"></script>
+</body>
+</html>

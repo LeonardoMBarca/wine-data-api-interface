@@ -8,7 +8,35 @@
 </head>
 <body>
 
-    <h2 style="margin-bottom: 20px; color: #1a73e8;">📊 Painel de Análise de Dados</h2>
+    <h2 style="margin-bottom: 20px; color: #1a73e8;">📊 Painel de Comércio de Vinhos</h2>
+
+<div style="background-color: #f0f4f8; padding: 20px; display: flex; justify-content: center; gap: 15px; border-bottom: 2px solid #1a73e8;">
+    <a href="{{ url_for('dashboard.index') }}" style="text-decoration: none;">
+        <button style="background-color: #1a73e8; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            📦 Comércio
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.exportacao') }}" style="text-decoration: none;">
+        <button style="background-color: #34a853; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🌍 Exportação
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.importacao') }}" style="text-decoration: none;">
+        <button style="background-color: #fbbc05; color: black; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🛬 Importação
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.processamento') }}" style="text-decoration: none;">
+        <button style="background-color: #ff7043; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            ⚙️ Processamento
+        </button>
+    </a>
+    <a href="{{ url_for('dashboard.producao') }}" style="text-decoration: none;">
+        <button style="background-color: #9c27b0; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            🧪 Produção
+        </button>
+    </a>
+</div>
 
     <div class="filters">
         <label>Ano:
@@ -78,6 +106,6 @@
         window.dadosComercio = {{ dados | tojson }};
         window.colunasComercio = {{ colunas | tojson }};
     </script>
-    <script src="{{ url_for('dashboard.static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('dashboard.static', filename='js/script_comercio.js') }}"></script>
 </body>
 </html>
