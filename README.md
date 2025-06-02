@@ -157,9 +157,6 @@ Password: demonstracao
 POST /auth/login
 
 ```
-**Body (JSON)**:
-
-```json
 {
   "username": "user",
   "password": "user"
