@@ -13,8 +13,16 @@ load_dotenv()
 
 app = Flask(__name__)
 
+# Configuração JWT para API
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "default_secret_key")
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=30)
+
+# Configuração para sessão do Flask (necessário para autenticação do dashboard)
+app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY", "dashboard_secret_key")
+app.config["SESSION_TYPE"] = "filesystem"
+app.config["SESSION_PERMANENT"] = False
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=2)
+
 app.config['SWAGGER'] = {
     'title': 'API Pública Embrapa',
     'uiversion': 3

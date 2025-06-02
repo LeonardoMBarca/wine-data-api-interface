@@ -5,6 +5,57 @@
     <title>Dashboard de Produção de Vinhos</title>
     <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .update-button {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .update-button:hover {
+            background-color: #3367d6;
+        }
+        .update-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .loading {
+            display: none;
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .status-message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
 </head>
 <body>
 
@@ -36,6 +87,14 @@
             🧪 Produção
         </button>
     </a>
+</div>
+<!-- Botão de atualização de dados -->
+<div style="text-align: center; margin: 20px 0;">
+    <button id="atualizar-dados" class="update-button">
+        🔄 Atualizar Dados
+        <div id="loading" class="loading"></div>
+    </button>
+    <div id="status-message" class="status-message"></div>
 </div>
 
 <div class="filters">
@@ -105,6 +164,52 @@
 <script>
     window.dadosProducao = {{ dados | tojson }};
     window.colunasProducao = {{ colunas | tojson }};
+        
+    // Script para atualização de dados
+    document.getElementById('atualizar-dados').addEventListener('click', function() {
+        const button = this;
+        const loading = document.getElementById('loading');
+        const statusMessage = document.getElementById('status-message');
+        
+        // Desabilita o botão e mostra o indicador de carregamento
+        button.disabled = true;
+        loading.style.display = 'block';
+        statusMessage.style.display = 'none';
+        statusMessage.className = 'status-message';
+        
+        // Faz a requisição para atualizar os dados
+        fetch('/atualizar-dados', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            loading.style.display = 'none';
+            statusMessage.style.display = 'block';
+            
+            if (data.status === 'success') {
+                statusMessage.textContent = data.message;
+                statusMessage.classList.add('success');
+                // Recarrega a página após 2 segundos para mostrar os dados atualizados
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                statusMessage.textContent = data.message;
+                statusMessage.classList.add('error');
+                button.disabled = false;
+            }
+        })
+        .catch(error => {
+            loading.style.display = 'none';
+            statusMessage.style.display = 'block';
+            statusMessage.textContent = 'Erro ao conectar com o servidor.';
+            statusMessage.classList.add('error');
+            button.disabled = false;
+        });
+    });
 </script>
 <script src="{{ url_for('dashboard.static', filename='js/script_producao.js') }}"></script>
 
