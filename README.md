@@ -152,12 +152,10 @@ User: admin
 
 Password: demonstracao
 
-```## 📡 API Endpoints
-
 ### Autenticação
 
-```
 POST /auth/login
+
 ```
 **Body (JSON)**:
 
@@ -167,6 +165,7 @@ POST /auth/login
   "password": "user"
 }
 ```
+
 **Resposta**:
 
 ```json
@@ -174,21 +173,25 @@ POST /auth/login
   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 ```
+
 ### Executar Crawler Manualmente
 
 ```
 POST /crawler/executar
 ```
+
 **Header**:
 
 ```
 Authorization: Bearer <seu_token>
 ```
+
 ### Consultar Dados
 
 ```
 GET /data/<categoria>/<subcategoria>
 ```
+
 **Categorias disponíveis**:
 
 - `exportacao`
@@ -213,6 +216,7 @@ GET /data/<categoria>/<subcategoria>
 ```
 Authorization: Bearer <seu_token>
 ```
+
 **Exemplo de resposta**:
 
 ```json
@@ -225,6 +229,7 @@ Authorization: Bearer <seu_token>
   ]
 }
 ```
+
 ## 🖥️ Dashboard
 
 O dashboard oferece uma interface visual para análise dos dados coletados e processados.
@@ -339,6 +344,7 @@ tech-challenge-fiap-machine-learning-api/
 ├── README.md                      # Este arquivo
 └── requirements.txt               # Dependências do projeto
 ```
+
 ## 🧠 Cenários de Uso com Machine Learning
 
 Esta API foi projetada para alimentar modelos de machine learning para análise e previsão de dados vitivinícolas. Alguns cenários possíveis:
