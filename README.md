@@ -38,6 +38,8 @@ Os dados coletados incluem informações sobre produção, processamento, comerc
 
 O sistema segue uma arquitetura moderna de processamento de dados:
 
+![Arquitetura](imgs\arquitetura.png)
+
 1. **Camada de Coleta (Crawler)**: Extrai dados do site da Embrapa
 2. **Camada de Processamento (ETL)**:
    - **Bronze**: Dados brutos como coletados
