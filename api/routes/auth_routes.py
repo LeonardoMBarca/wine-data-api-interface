@@ -5,7 +5,7 @@ from flasgger import swag_from
 auth_bp = Blueprint("auth", __name__)
 
 USERS = {
-    "user": "user"
+    "admin": "demonstracao"
 }
 
 @auth_bp.route("/login", methods=["POST"])
@@ -22,8 +22,8 @@ USERS = {
             'schema': {
                 'type': 'object',
                 'properties': {
-                    'username': {'type': 'string', 'example': 'user'},
-                    'password': {'type': 'string', 'example': 'user'}
+                    'username': {'type': 'string', 'example': 'admin'},
+                    'password': {'type': 'string', 'example': 'demonstracao'}
                 },
                 'required': ['username', 'password']
             }
