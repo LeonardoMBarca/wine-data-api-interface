@@ -25,7 +25,16 @@ app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=2)
 
 app.config['SWAGGER'] = {
     'title': 'API Pública Embrapa',
-    'uiversion': 3
+    'uiversion': 3,
+    'securityDefinitions': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': 'Insira seu token JWT com o prefixo "Bearer ". Exemplo: "Bearer abcde12345"'
+        }
+    },
+    'security': [{'Bearer': []}]
 }
 swagger = Swagger(app)
 jwt = JWTManager(app)

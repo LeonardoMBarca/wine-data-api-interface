@@ -34,7 +34,7 @@ USERS = {
             'description': 'Token JWT gerado com sucesso',
             'examples': {
                 'application/json': {
-                    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                    "access_token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
                 }
             }
         },
@@ -50,6 +50,7 @@ def login():
 
     if username in USERS and USERS[username] == password:
         access_token = create_access_token(identity=username)
-        return jsonify(access_token=access_token), 200
+        token_with_prefix = f"Bearer {access_token}"
+        return jsonify(access_token=token_with_prefix), 200
     else:
         return jsonify({"msg": "Credenciais inválidas"}), 401
