@@ -1,4 +1,4 @@
-# 🍇 Tech Challenge FIAP - API de Machine Learning para Dados Vitivinícolas
+# 🍇 Tech Challenge FIAP - API para Dados Vitivinícolas
 
 ![Embrapa Uva e Vinho](https://img.shields.io/badge/Embrapa-Uva%20e%20Vinho-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
